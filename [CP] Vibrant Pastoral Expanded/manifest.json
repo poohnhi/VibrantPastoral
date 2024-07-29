@@ -1,0 +1,26 @@
+{
+	"Name": "Vibrant Pastoral Expanded",
+	"Author": "grapeponta + JefGrizli",
+	"Version": "2.0.0-sve",
+	"Description": "Recolouring/redrawing of SVE assets.",
+	"UniqueID": "VibrantPastoral.Expanded",
+	"MinimumApiVersion": "4.0.7",
+	"UpdateKeys": [ "Nexus:6367@SVE" ],
+	"ContentPackFor":
+				{"UniqueID": "Pathoschild.ContentPatcher"
+				},
+	"Dependencies": [
+				{"UniqueID": "VibrantPastoral.C"
+				},
+				{"UniqueID": "FlashShifter.StardewValleyExpandedCP"
+				},
+				{"UniqueID": "grapeponta.VibrantPastoralRecolor"
+				},
+				{"UniqueID": "FlashShifter.GrandpasFarm",
+				"IsRequired": false
+				},
+				{"UniqueID": "flashshifter.immersivefarm2remastered",
+				"IsRequired": false
+				}
+	]
+}

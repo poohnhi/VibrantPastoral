@@ -1,0 +1,20 @@
+{
+	"Changes": [
+		//Mail
+		{
+			"Action": "EditData",
+			"Target": "Data/Mail",
+			"Entries": {
+				"EdNygma_ES1": "^^^^^        I sit on cathedrals and arches alike. ^                But it's no gargoyle ^             in the East you will find.[letterbg Mods/grapeponta.VibrantPastoralRecolor/letterBGextra 0][textcolor green][#]Ed Nygma"
+			}
+		},
+		//Mail Event
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"155641001/n EastScarp_IntroMail/l EdNygma_ES1/x EdNygma_ES1": "null"
+			}
+		}
+	]
+}

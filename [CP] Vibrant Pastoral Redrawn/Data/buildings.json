@@ -1,0 +1,698 @@
+{
+	"Changes": [
+	//Buildings
+		{
+			"LogName": "Barn",
+			"Action": "EditImage",
+			"Target": "Buildings/Barn",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width": 112, "Height": 128 },
+			"When": { "barn": true }
+		},
+		{
+			"LogName": "Big Barn",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Barn",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 112, "Y": 0, "Width": 112, "Height": 128 },
+			"When": { "big barn": true }
+		},
+		{
+			"LogName": "Big Coop",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Coop",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 240, "Y": 256, "Width": 96, "Height": 128 },
+			"When": { "big coop": true }
+		},
+		{
+			"LogName": "Big Shed",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Shed",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 224, "Y": 608, "Width": 112, "Height": 128 },
+			"When": { "big shed": true }
+		},
+		{
+			"LogName": "Coop",
+			"Action": "EditImage",
+			"Target": "Buildings/Coop",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 240, "Y": 128, "Width": 96, "Height": 128 },
+			"When": { "coop": true }
+		},
+		{
+			"LogName": "Deluxe Barn",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Barn",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 224, "Y": 0, "Width": 112, "Height": 128 },
+			"When": { "deluxe barn": true }
+		},
+		{
+			"LogName": "Deluxe Coop",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Coop",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 896, "Width": 96, "Height": 128 },
+			"When": { "deluxe coop": true }
+		},
+		{
+			"LogName": "Greenhouse",
+			"Action": "EditImage",
+			"Target": "Buildings/Greenhouse",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 608, "Width": 112, "Height": 286 },
+			"ToArea": { "X": 0, "Y": 34, "Width": 112, "Height": 286 },
+			"When": { "greenhouse": true }
+		},
+		{
+			"LogName": "House 1",
+			"Action": "EditImage",
+			"Target": "Buildings/Houses",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 464, "Width": 144, "Height": 144 },
+			"ToArea": { "X": 16, "Y": 0, "Width": 144, "Height": 144 },
+			"When": { "houses": true }
+		},
+		{
+			"LogName": "House 2",
+			"Action": "EditImage",
+			"Target": "Buildings/Houses",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 144, "Y": 464, "Width": 144, "Height": 144 },
+			"ToArea": { "X": 16, "Y": 144, "Width": 144, "Height": 144 },
+			"When": { "houses": true }
+		},
+		{
+			"LogName": "House 3",
+			"Action": "EditImage",
+			"Target": "Buildings/Houses",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 176, "Y": 736, "Width": 160, "Height": 144 },
+			"ToArea": { "X": 0, "Y": 288, "Width": 160, "Height": 144 },
+			"When": { "houses": true }
+		},
+		{
+			"LogName": "Log Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 128, "Width": 240, "Height": 112 },
+			"When": { "log": true }
+		},
+		{
+			"LogName": "Mill",
+			"Action": "EditImage",
+			"Target": "Buildings/Mill",
+			"FromFile": "assets/buildings/{{Season}}_mill.png",
+			"PatchMode": "Replace",
+			"When": { "mill": true }
+		},
+		{
+			"LogName": "Plank Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 240, "Width": 240, "Height": 112 },
+			"When": { "plank": true }
+		},
+		{
+			"LogName": "Shed",
+			"Action": "EditImage",
+			"Target": "Buildings/Shed",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 112, "Y": 608, "Width": 112, "Height": 128 },
+			"When": { "shed": true }
+		},
+		{
+			"LogName": "Silo",
+			"Action": "EditImage",
+			"Target": "Buildings/Silo",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 288, "Y": 464, "Width": 48, "Height": 128 },
+			"When": { "silo": true }
+		},
+		{
+			"LogName": "Slime Hutch",
+			"Action": "EditImage",
+			"Target": "Buildings/Slime Hutch",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 224, "Y": 912, "Width": 112, "Height": 112 },
+			"When": { "slime hutch": true }
+		},
+		{
+			"LogName": "Stable",
+			"Action": "EditImage",
+			"Target": "Buildings/Stable",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 112, "Y": 736, "Width": 64, "Height": 96 },
+			"When": { "stable": true }
+		},
+		{
+			"LogName": "Stone Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 352, "Width": 240, "Height": 112 },
+			"When": { "stone": true }
+		},
+		{
+			"LogName": "Well",
+			"Action": "EditImage",
+			"Target": "Buildings/Well",
+			"FromFile": "assets/buildings/{{Season}}_buildings.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 112, "Y": 832, "Width": 48, "Height": 80 },
+			"When": { "well": true }
+		},
+		{
+			"LogName": "Beach Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin",
+			"FromFile": "assets/buildings/{{Season}}_cabins_1_6.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width": 240, "Height": 112 },
+			"When": { "beach": true }
+		},
+		{
+			"LogName": "Neighbor Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Neighbor Cabin",
+			"FromFile": "assets/buildings/{{Season}}_cabins_1_6.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 112, "Width": 240, "Height": 112 },
+			"When": { "neighbor": true }
+		},
+		{
+			"LogName": "Rustic Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Rustic Cabin",
+			"FromFile": "assets/buildings/{{Season}}_cabins_1_6.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 224, "Width": 240, "Height": 112 },
+			"When": { "rustic": true }
+		},
+		{
+			"LogName": "Trailer Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Trailer Cabin",
+			"FromFile": "assets/buildings/{{Season}}_cabins_1_6.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 336, "Width": 240, "Height": 112 },
+			"When": { "trailer": true }
+		},
+			//Fish Pond
+			{
+				"LogName": "Fish Pond a",
+				"Action": "EditImage",
+				"Target": "Buildings/Fish Pond",
+				"FromFile": "assets/buildings/{{Season}}_fish pond.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 0, "Width": 84, "Height": 176 },
+				"ToArea": { "X": 0, "Y": 0, "Width": 84, "Height": 176 },
+				"When": { "fish pond": true }
+			},
+			{
+				"LogName": "Fish Pond b",
+				"Action": "EditImage",
+				"Target": "Buildings/Fish Pond",
+				"FromFile": "assets/buildings/{{Season}}_fish pond.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 84, "Y": 0, "Width": 76, "Height": 176 },
+				"ToArea": { "X": 84, "Y": 0, "Width": 76, "Height": 176 },
+				"When": { "fish pond": true }
+			},
+			//Gold Clock
+			{
+				"LogName": "Gold Clock",
+				"Action": "EditImage",
+				"Target": "Buildings/Gold Clock",
+				"FromFile": "assets/buildings/{{Season}}_buildings.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 240, "Y": 384, "Width": 48, "Height": 80 },
+				"When": { "gold clock": true }
+			},
+			//Obelisks
+			{
+				"LogName": "Desert Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Desert Obelisk",
+				"FromFile": "assets/buildings/{{Season}}_obelisks.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 128 },
+				"When": { "obelisks": true }
+			},
+			{
+				"LogName": "Earth Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Earth Obelisk",
+				"FromFile": "assets/buildings/{{Season}}_obelisks.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 48, "Y": 0, "Width": 48, "Height": 128 },
+				"When": { "obelisks": true }
+			},
+			{
+				"LogName": "Island Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Island Obelisk",
+				"FromFile": "assets/buildings/{{Season}}_obelisks.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 96, "Y": 0, "Width": 48, "Height": 128 },
+				"When": { "obelisks": true }
+			},
+			{
+				"LogName": "Water Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Water Obelisk",
+				"FromFile": "assets/buildings/{{Season}}_obelisks.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 144, "Y": 0, "Width": 48, "Height": 128 },
+				"When": { "obelisks": true }
+			},
+			//Pet Bowl
+			{
+				"LogName": "Pet Bowl",
+				"Action": "EditImage",
+				"Target": "Buildings/Pet Bowl, Buildings/Hay Pet Bowl, Buildings/Stone Pet Bowl",
+				"FromFile": "assets/{{Target}}.png",
+				"PatchMode": "Replace",
+				"When": { "pet bowl": true }
+			},
+		//SnOverlay
+		{
+			"LogName": "Barn",
+			"Action": "EditImage",
+			"Target": "Buildings/Barn",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 0, "Width": 112, "Height": 128 },
+			"When": {
+				"barn": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Big Barn",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Barn",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 112, "Y": 0, "Width": 112, "Height": 128 },
+			"When": {
+				"big barn": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Big Coop",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Coop",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 240, "Y": 256, "Width": 96, "Height": 128 },
+			"When": {
+				"big coop": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Big Shed",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Shed",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 224, "Y": 608, "Width": 112, "Height": 128 },
+			"When": {
+				"big shed": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Coop",
+			"Action": "EditImage",
+			"Target": "Buildings/Coop",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 240, "Y": 128, "Width": 96, "Height": 128 },
+			"When": {
+				"coop": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Deluxe Barn",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Barn",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 224, "Y": 0, "Width": 112, "Height": 128 },
+			"When": {
+				"deluxe barn": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Deluxe Coop",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Coop",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 896, "Width": 96, "Height": 128 },
+			"When": {
+				"deluxe coop": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Greenhouse",
+			"Action": "EditImage",
+			"Target": "Buildings/Greenhouse",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 608, "Width": 112, "Height": 286 },
+			"ToArea": { "X": 0, "Y": 34, "Width": 112, "Height": 286 },
+			"When": {
+				"greenhouse": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "House 1",
+			"Action": "EditImage",
+			"Target": "Buildings/Houses",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 464, "Width": 144, "Height": 144 },
+			"ToArea": { "X": 16, "Y": 0, "Width": 144, "Height": 144 },
+			"When": {
+				"houses": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "House 2",
+			"Action": "EditImage",
+			"Target": "Buildings/Houses",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 144, "Y": 464, "Width": 144, "Height": 144 },
+			"ToArea": { "X": 16, "Y": 144, "Width": 144, "Height": 144 },
+			"When": {
+				"houses": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "House 3",
+			"Action": "EditImage",
+			"Target": "Buildings/Houses",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 176, "Y": 736, "Width": 160, "Height": 144 },
+			"ToArea": { "X": 0, "Y": 288, "Width": 160, "Height": 144 },
+			"When": {
+				"houses": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Log Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 128, "Width": 240, "Height": 112 },
+			"When": {
+				"log": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Mill",
+			"Action": "EditImage",
+			"Target": "Buildings/Mill",
+			"FromFile": "assets/buildings/mill_snow.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"mill": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Plank Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 240, "Width": 240, "Height": 112 },
+			"When": {
+				"plank": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Shed",
+			"Action": "EditImage",
+			"Target": "Buildings/Shed",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 112, "Y": 608, "Width": 112, "Height": 128 },
+			"When": {
+				"shed": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Silo",
+			"Action": "EditImage",
+			"Target": "Buildings/Silo",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 288, "Y": 464, "Width": 48, "Height": 128 },
+			"When": {
+				"silo": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Slime Hutch",
+			"Action": "EditImage",
+			"Target": "Buildings/Slime Hutch",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 224, "Y": 912, "Width": 112, "Height": 112 },
+			"When": {
+				"slime hutch": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Stable",
+			"Action": "EditImage",
+			"Target": "Buildings/Stable",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 112, "Y": 736, "Width": 64, "Height": 96 },
+			"When": {
+				"stable": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Stone Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 352, "Width": 240, "Height": 112 },
+			"When": {
+				"stone": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Well",
+			"Action": "EditImage",
+			"Target": "Buildings/Well",
+			"FromFile": "assets/buildings/buildings_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 112, "Y": 832, "Width": 48, "Height": 80 },
+			"When": {
+				"well": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Beach Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin",
+			"FromFile": "assets/buildings/cabins_1_6_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 0, "Width": 240, "Height": 112 },
+			"When": {
+				"beach": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Neighbor Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Neighbor Cabin",
+			"FromFile": "assets/buildings/cabins_1_6_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 112, "Width": 240, "Height": 112 },
+			"When": {
+				"neighbor": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Rustic Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Rustic Cabin",
+			"FromFile": "assets/buildings/cabins_1_6_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 224, "Width": 240, "Height": 112 },
+			"When": {
+				"rustic": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Trailer Cabin",
+			"Action": "EditImage",
+			"Target": "Buildings/Trailer Cabin",
+			"FromFile": "assets/buildings/cabins_1_6_snow.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 336, "Width": 240, "Height": 112 },
+			"When": {
+				"trailer": true,
+				"VibrantPastoral.C/SnOverlay": true,
+				"Season": "winter"
+			}
+		},
+			//Fish Pond
+			{
+				"LogName": "Fish Pond",
+				"Action": "EditImage",
+				"Target": "Buildings/Fish Pond",
+				"FromFile": "assets/{{Target}}_snow.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 0, "Width": 160, "Height": 176 },
+				"When": {
+					"fish pond": true,
+					"VibrantPastoral.C/SnOverlay": true,
+					"Season": "winter"
+				}
+			},
+			//Gold Clock
+			{
+				"LogName": "Gold Clock",
+				"Action": "EditImage",
+				"Target": "Buildings/Gold Clock",
+				"FromFile": "assets/buildings/buildings_snow.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 240, "Y": 384, "Width": 48, "Height": 80 },
+				"When": {
+					"gold clock": true,
+					"VibrantPastoral.C/SnOverlay": true,
+					"Season": "winter"
+				}
+			},
+			//Obelisks
+			{
+				"LogName": "Desert Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Desert Obelisk",
+				"FromFile": "assets/buildings/obelisks_snow.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 128 },
+				"When": {
+					"obelisks": true,
+					"VibrantPastoral.C/SnOverlay": true,
+					"Season": "winter"
+				}
+			},
+			{
+				"LogName": "Earth Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Earth Obelisk",
+				"FromFile": "assets/buildings/obelisks_snow.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 48, "Y": 0, "Width": 48, "Height": 128 },
+				"When": {
+					"obelisks": true,
+					"VibrantPastoral.C/SnOverlay": true,
+					"Season": "winter"
+				}
+			},
+			{
+				"LogName": "Island Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Island Obelisk",
+				"FromFile": "assets/buildings/obelisks_snow.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 96, "Y": 0, "Width": 48, "Height": 128 },
+				"When": {
+					"obelisks": true,
+					"VibrantPastoral.C/SnOverlay": true,
+					"Season": "winter"
+				}
+			},
+			{
+				"LogName": "Water Obe",
+				"Action": "EditImage",
+				"Target": "Buildings/Water Obelisk",
+				"FromFile": "assets/buildings/obelisks_snow.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 144, "Y": 0, "Width": 48, "Height": 128 },
+				"When": {
+					"obelisks": true,
+					"VibrantPastoral.C/SnOverlay": true,
+					"Season": "winter"
+				}
+			}
+	]
+}

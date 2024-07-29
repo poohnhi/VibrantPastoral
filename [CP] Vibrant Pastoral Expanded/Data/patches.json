@@ -1,0 +1,230 @@
+{
+	"Changes": [
+	//LooseSprites
+		//Map
+			//Green Fall
+			{
+				"LogName": "Map G",
+				"Action": "EditImage",
+				"Target": "LooseSprites/map_fall",
+				"FromFile": "assets/patches/loosesprites/fall_map_green.png",
+				"PatchMode": "Overlay",
+				"When": {
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true,
+				}
+			},
+		//Meadowlands Farm
+			//Green Fall
+			{
+				"LogName": "Meadows G",
+				"Action": "EditImage",
+				"Target": "LooseSprites/Farm_ranching_map_fall",
+				"FromFile": "assets/patches/loosesprites/fall_map_green.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 363, "Width": 131, "Height": 61 },
+				"When": {
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true,
+				}
+			},
+	//Maps
+		//z_Extras
+			//Sickly Willow
+			{
+				"LogName": "Extras Tree a",
+				"Action": "EditImage",
+				"Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+				"FromFile": "assets/patches/maps/Simple Foliage/sickly_willow.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 0, "Y": 0, "Width": 112, "Height": 96 },
+				"ToArea": { "X": 112, "Y": 3104, "Width": 112, "Height": 96 },
+				"When": {
+					"VibrantPastoral.C/Extras": true,
+					"HasMod": "Az.Foliage"
+				}
+			},
+			{
+				"LogName": "Extras Tree b",
+				"Action": "EditImage",
+				"Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+				"FromFile": "assets/patches/maps/Simple Foliage/sickly_willow.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 16, "Y": 96, "Width": 96, "Height": 16 },
+				"ToArea": { "X": 128, "Y": 3200, "Width": 96, "Height": 16 },
+				"When": {
+					"VibrantPastoral.C/Extras": true,
+					"HasMod": "Az.Foliage"
+				}
+			},
+			//Oasis Sand
+			{
+				"LogName": "Extras Oasis",
+				"Action": "EditImage",
+				"Target": "Maps/summer_z_extras",
+				"FromFile": "assets/patches/maps/oasis_sand.png",
+				"PatchMode": "Overlay",
+				"ToArea": { "X": 0, "Y": 3360, "Width": 128, "Height": 64 },
+				"When": {
+					"VibrantPastoral.C/Extras": true,
+					"VibrantPastoral.C/IridiumOasis": false
+				}
+			},
+			//Green Fall
+			{
+				"LogName": "Extras G Waterfall",
+				"Action": "EditImage",
+				"Target": "Maps/fall_z_extras",
+				"FromFile": "assets/patches/{{Target}}_green.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 0, "Width": 32, "Height": 16 },
+				"ToArea": { "X": 144, "Y": 2160, "Width": 32, "Height": 16 },
+				"When": {
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true
+				}
+			},
+			{
+				"LogName": "Extras G Bush",
+				"Action": "EditImage",
+				"Target": "Maps/fall_z_extras",
+				"FromFile": "assets/patches/{{Target}}_green.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 128, "Y": 0, "Width": 16, "Height": 32 },
+				"ToArea": { "X": 368, "Y": 372, "Width": 16, "Height": 32 },
+				"When": {
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true
+				}
+			},
+			{
+				"LogName": "Extras G Planter",
+				"Action": "EditImage",
+				"Target": "Maps/fall_z_extras",
+				"FromFile": "assets/patches/{{Target}}_green.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 16, "Width": 128, "Height": 32 },
+				"ToArea": { "X": 0, "Y": 2704, "Width": 128, "Height": 32 },
+				"When": {
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true
+				}
+			},
+			//Buildings
+				//Shrubbery
+				{
+					"LogName": "Shrubbery",
+					"Action": "EditImage",
+					"Target": "Maps/fall_z_extras",
+					"FromFile": "assets/patches/maps/{{OliVic}}/OliVic.png",
+					"PatchMode": "Overlay",
+					"FromArea": { "X": 0, "Y": 0, "Width": 159, "Height": 20 },
+					"ToArea": { "X": 216, "Y": 768, "Width": 159, "Height": 20 },
+					"When": {
+						"VibrantPastoral.C/Extras": true,
+						"Buildings |contains=extras": true,
+						"Shrubbery |contains=false": false				
+					}
+				},
+				{
+					"LogName": "Shrubbery",
+					"Action": "EditImage",
+					"Target": "Maps/spring_z_extras",
+					"FromFile": "assets/patches/maps/{{OliVic}}/OliVic.png",
+					"PatchMode": "Overlay",
+					"FromArea": { "X": 0, "Y": 20, "Width": 159, "Height": 20 },
+					"ToArea": { "X": 216, "Y": 768, "Width": 159, "Height": 20 },
+					"When": {
+						"VibrantPastoral.C/Extras": true,
+						"Buildings |contains=extras": true,
+						"Shrubbery |contains=false": false				
+					}
+				},
+				{
+					"LogName": "Shrubbery",
+					"Action": "EditImage",
+					"Target": "Maps/summer_z_extras",
+					"FromFile": "assets/patches/maps/{{OliVic}}/OliVic.png",
+					"PatchMode": "Overlay",
+					"FromArea": { "X": 0, "Y": 40, "Width": 159, "Height": 20 },
+					"ToArea": { "X": 216, "Y": 768, "Width": 159, "Height": 20 },
+					"When": {
+						"VibrantPastoral.C/Extras": true,
+						"Buildings |contains=extras": true,
+						"Shrubbery |contains=false": false				
+					}
+				},
+				{
+					"LogName": "Shrubbery",
+					"Action": "EditImage",
+					"Target": "Maps/winter_z_extras",
+					"FromFile": "assets/patches/maps/{{OliVic}}/OliVic.png",
+					"PatchMode": "Overlay",
+					"FromArea": { "X": 0, "Y": 60, "Width": 159, "Height": 20 },
+					"ToArea": { "X": 216, "Y": 768, "Width": 159, "Height": 20 },
+					"When": {
+						"VibrantPastoral.C/Extras": true,
+						"Buildings |contains=extras": true,
+						"Shrubbery |contains=false": false				
+					}
+				},
+	//Minigames
+		//Boat Journey Map
+			//Green Fall
+			{
+				"LogName": "BJM G",
+				"Action": "EditImage",
+				"Target": "Minigames/fall_boatJourneyMap",
+				"FromFile": "assets/patches/{{Target}}_green.png",
+				"PatchMode": "Overlay",
+				"When": {
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true
+				}
+			},
+		//BJM Grampleton
+		{
+			"LogName": "BJM Patch Grampleton",
+			"Action": "EditImage",
+			"Target": "Minigames/{{Season}}_boatJourneyMap",
+			"FromFile": "assets/patches/minigames/{{Season}}_bjm_grampleton.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 366, "Y": 0, "Width": 274, "Height": 113 },
+			"When": {
+				"HasMod": "flashshifter.GrampletonFields",
+				"HasMod |contains=LemurKat.EastScarpe.CP": false
+			}
+		},
+			//Green Fall
+			{
+				"LogName": "BJM Patch Grampleton G",
+				"Action": "EditImage",
+				"Target": "Minigames/fall_boatJourneyMap",
+				"FromFile": "assets/patches/minigames/fall_bjm_grampleton_green.png",
+				"PatchMode": "Overlay",
+				"ToArea": { "X": 366, "Y": 0, "Width": 274, "Height": 113 },
+				"When": {
+					"HasMod": "flashshifter.GrampletonFields",
+					"HasMod |contains=LemurKat.EastScarpe.CP": false,
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true
+				}
+			},
+	//Mods
+		//SVE
+			//Green Fall
+			{
+				"LogName": "Grampleton Fields Map G",
+				"Action": "EditImage",
+				"Target": "Mods/FlashShifter.StardewValleyExpandedCP/fall_GrampletonFields",
+				"FromFile": "assets/patches/SVE/{{TargetWithoutPath}}_green.png",
+				"PatchMode": "Overlay",
+				"When": {
+					"HasMod": "flashshifter.GrampletonFields",
+					"HasMod |contains=LemurKat.EastScarpe.CP": false,
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true
+				}
+			}
+	]
+}

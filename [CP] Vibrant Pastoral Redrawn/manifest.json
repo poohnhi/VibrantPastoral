@@ -1,0 +1,22 @@
+{
+	"Name": "Vibrant Pastoral Redrawn",
+	"Author": "grapeponta + JefGrizli + poohnhi",
+	"Version": "2.0.0",
+	"Description": "Recolouring/redrawing of vanilla assets.",
+	"UniqueID": "grapeponta.VibrantPastoralRecolor",
+	"MinimumApiVersion": "4.0.7",
+	"UpdateKeys": [ "Nexus:6367" ],
+	"ContentPackFor":
+				{"UniqueID": "Pathoschild.ContentPatcher"
+				},
+	"Dependencies": [
+				{"UniqueID": "VibrantPastoral.C"
+				},
+				{"UniqueID": "Bouhm.NPCMapLocations",
+				"IsRequired": false
+				},
+				{"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+				"IsRequired": false
+				}
+	]
+}

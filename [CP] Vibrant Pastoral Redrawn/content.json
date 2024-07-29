@@ -1,0 +1,264 @@
+{
+	"Format": "2.2.0",
+	"ConfigSchema": {
+		"Buildings": {
+			"AllowValues": "farm, outdoors, town, warehouse",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Default": "farm, outdoors, town, warehouse",
+			"Description": "Enable changes to specified buildings.",
+			"Section": "Buildings"},
+		"Barn": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Big Barn": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Deluxe Barn": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Coop": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Big Coop": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Deluxe Coop": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Greenhouse": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Houses": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Fish Pond": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Gold Clock": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Mill": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Obelisks": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Pet Bowl": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Shed": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Big Shed": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Silo": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Slime Hutch": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Stable": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Well": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Farm"},
+		"Beach": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Cabins"},
+		"Log": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Cabins"},
+		"Neighbor": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Cabins"},
+		"Plank": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Cabins"},
+		"Rustic": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Cabins"},
+		"Stone": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Cabins"},
+		"Trailer": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "No effect if Buildings:farm not enabled.",
+			"Section": "Cabins"},
+		"Fences": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggle changes to fencess.",
+			"Section": "Buildables"},
+	},
+	"DynamicTokens": [
+		{
+			"Name": "Version",
+			"Value": ""
+		},
+		{
+			"Name": "Version",
+			"Value": "expanded/",
+			"When": { "HasMod": "VibrantPastoral.Expanded" }
+		},
+		{
+			"Name": "Seasonal",
+			"Value": "_{{Season}}"
+		},
+		{
+			"Name": "Seasonal",
+			"Value": "",
+			"When": { "Season": "Spring" }
+		},
+		{
+			"Name": "SeasonOverride",
+			"Value": "{{Season}}"
+		},
+		{
+			"Name": "SeasonOverride",
+			"Value": "Spring",
+			"When": { "Query: NOT {{IsOutdoors}} OR ( {{LocationName |contains=Desert}} AND {{HasMod |contains=VibrantPastoral.Expanded}} )": true}
+		},
+		{
+			"Name": "SeasonOverride",
+			"Value": "Summer",
+			"When": { "LocationName": "IslandEast, IslandNorth, IslandSouth, IslandSouthEast, IslandWest" }
+		},
+		{
+			"Name": "FarmLayout",
+			"Value": "{{FarmType}}"
+		},
+		{
+			"Name": "FarmLayout",
+			"Value": "VibrantPastoral.C/PetBowlShadow",
+			"When": { "VibrantPastoral.C/PetBowlShadow": "Beach, Standard" }
+		},
+		{
+			"Name": "FarmLayout",
+			"Value": "void",
+			"When": {
+				"FarmType": "Standard",
+				"HasMod": "flashshifter.GrandpasFarm, flashshifter.immersivefarm2remastered"
+			}
+		},
+		{
+			"Name": "TreeType",
+			"Value": "Vanilla"
+		},
+		{
+			"Name": "TreeType",
+			"Value": "Simple Foliage",
+			"When": { "HasMod": "Az.Foliage" }
+		}
+	],
+	"Changes": [
+	//Inclusions
+		//0Main
+        {
+            "Action": "Include",
+            "FromFile": "data/{{Version}}0main.json"
+        },
+		//Buildings:Farm
+        {
+            "Action": "Include",
+            "FromFile": "data/buildings.json, data/masks.json",
+			"When": { "Buildings |contains=farm": true }
+        },
+		//Build on/Buildable Ginger Island
+        {
+            "Action": "Include",
+            "FromFile": "data/compat/BuildGingerIsland.json",
+			"When": { "Query: {{HasMod |contains=Sexynes.CP.BuildOnGingerIslandFarm}} OR {{HasMod |contains=mouahrara.BuildableGingerIslandFarm}}": true }
+        },
+		//Mail
+        {
+            "Action": "Include",
+            "FromFile": "data/mail.json",
+			"When": { "VibrantPastoral.C/EdNygma": true }
+        },
+		//Patches
+        {
+            "Action": "Include",
+            "FromFile": "data/{{Version}}patches.json"
+        },
+		//NPCMapLocations
+        {
+            "Action": "Include",
+            "FromFile": "data/compat/NPCMapLocations.json",
+			"When": {
+				"HasMod": "Bouhm.NPCMapLocations",
+				"HasMod |contains=VibrantPastoral.Expanded": false
+			}
+        },
+		//Floors Extra
+        {
+            "Action": "Include",
+            "FromFile": "data/flooring.json"
+        },
+		//Furniture
+        {
+            "Action": "Include",
+            "FromFile": "data/{{Version}}furniture.json",
+			"When": { "VibrantPastoral.C/Furniture": true }
+        },
+		//TownInterior
+        {
+            "Action": "Include",
+            "FromFile": "data/interiors.json",
+			"When": { "VibrantPastoral.C/Interiors": true }
+        }
+	]
+}

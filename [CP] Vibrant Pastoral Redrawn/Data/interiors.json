@@ -1,0 +1,147 @@
+{
+	"Changes": [
+		//TownInterior
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay"
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 0, "Width": 512, "Height": 497 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 497 }
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 497, "Width": 368, "Height": 191 },
+			"ToArea": { "X": 0, "Y": 497, "Width": 368, "Height": 191 }
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 174, "Y": 688, "Width": 226, "Height": 16 },
+			"ToArea": { "X": 174, "Y": 688, "Width": 226, "Height": 16 }
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 320, "Y": 704, "Width": 80, "Height": 80 },
+			"ToArea": { "X": 320, "Y": 704, "Width": 80, "Height": 80 }
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 160, "Y": 784, "Width": 240, "Height": 160 },
+			"ToArea": { "X": 160, "Y": 784, "Width": 240, "Height": 160 }
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 224, "Y": 944, "Width": 128, "Height": 80 },
+			"ToArea": { "X": 224, "Y": 944, "Width": 128, "Height": 80 }
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 384, "Y": 944, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 384, "Y": 944, "Width": 16, "Height": 32 }
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 352, "Y": 976, "Width": 16, "Height": 64 },
+			"ToArea": { "X": 352, "Y": 976, "Width": 16, "Height": 64 }
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 183, "Y": 992, "Width": 18, "Height": 64 },
+			"ToArea": { "X": 183, "Y": 992, "Width": 18, "Height": 64 }
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 215, "Y": 992, "Width": 18, "Height": 64 },
+			"ToArea": { "X": 215, "Y": 992, "Width": 18, "Height": 64 }
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 96, "Y": 1024, "Width": 73, "Height": 32 },
+			"ToArea": { "X": 96, "Y": 1024, "Width": 73, "Height": 32 }
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 247, "Y": 1024, "Width": 74, "Height": 32 },
+			"ToArea": { "X": 247, "Y": 1024, "Width": 74, "Height": 32 }
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 321, "Y": 1053, "Width": 1, "Height": 1 },
+			"ToArea": { "X": 321, "Y": 1053, "Width": 1, "Height": 1 }
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 366, "Y": 1052, "Width": 2, "Height": 2 },
+			"ToArea": { "X": 366, "Y": 1052, "Width": 2, "Height": 2 }
+		},
+		{
+			"LogName": "TownInterior",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 321, "Y": 1054, "Width": 95, "Height": 34 },
+			"ToArea": { "X": 321, "Y": 1054, "Width": 95, "Height": 34 }
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"Name": "Vibrant Pastoral East Scarp",
+	"Author": "JefGrizli",
+	"Version": "0.4.0-es",
+	"Description": "Recolouring/redrawing of East Scarp assets.",
+	"UniqueID": "VibrantPastoral.EeastScarp",
+	"MinimumApiVersion": "4.0.7",
+	"UpdateKeys": [ "Nexus:6367@ES" ],
+	"ContentPackFor":
+				{"UniqueID": "Pathoschild.ContentPatcher"
+				},
+	"Dependencies": [
+				{"UniqueID": "VibrantPastoral.C"
+				},
+				{"UniqueID": "grapeponta.VibrantPastoralRecolor"
+				},
+				{"UniqueID": "LemurKat.EastScarpe.CP"
+				},
+				{"UniqueID": "VibrantPastoral.Expanded",
+				"IsRequired": false
+				}
+	]
+}

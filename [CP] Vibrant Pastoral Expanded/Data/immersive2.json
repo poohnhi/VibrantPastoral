@@ -1,0 +1,28 @@
+{
+	"Changes": [
+		//Immersive Farm 2
+		{
+			"LogName": "IF2R",
+			"Action": "EditImage",
+			"Target": "LooseSprites/map{{Seasonal}}",
+			"FromFile": "assets/loosesprites/{{Season}}_map.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 142, "Y": 424, "Width": 142, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 43, "Width": 142, "Height": 61 }
+		},
+			//Green Fall
+			{
+				"LogName": "IF2R G",
+				"Action": "EditImage",
+				"Target": "LooseSprites/map_fall",
+				"FromFile": "assets/patches/loosesprites/fall_map_green.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 142, "Y": 424, "Width": 142, "Height": 61 },
+				"ToArea": { "X": 0, "Y": 43, "Width": 142, "Height": 61 },
+				"When": {
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true
+				},
+			}
+	]
+}

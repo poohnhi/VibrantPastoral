@@ -1,0 +1,60 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+		"Buildings": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggles changes to all buildings.",
+			"Section": "Buildings"},
+		"'New' Skin?": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Disable if East Scarp's skin not set as 'NewEastScarpe'.",
+			"Section": "Buildings"},
+		"Aideen's": {
+			"AllowValues": "golden, reddish brown, brown",
+			"AllowBlank": true,
+			"Default": "",
+			"Description": "Changes colour of Aideen's roof.",
+			"Section": "Buildings"}
+	},
+	"DynamicTokens": [
+		{
+			"Name": "Version",
+			"Value": ""
+		},
+		{
+			"Name": "Version",
+			"Value": "expanded/",
+			"When": { "HasMod": "VibrantPastoral.Expanded" }
+		},
+		{
+			"Name": "Seasonal",
+			"Value": "_{{Season}}"
+		},
+		{
+			"Name": "Seasonal",
+			"Value": "",
+			"When": { "Season": "Spring" }
+		}
+	],
+	"Changes": [
+	//Inclusions
+		//0Main
+        {
+            "Action": "Include",
+            "FromFile": "data/{{Version}}0main.json"
+		},
+		//Mail
+        {
+            "Action": "Include",
+            "FromFile": "data/mail.json",
+			"When": { "VibrantPastoral.C/EdNygma": true }
+        },
+		//Patches
+        {
+            "Action": "Include",
+            "FromFile": "data/{{Version}}patches.json"
+        }	
+	]
+}

@@ -1,0 +1,153 @@
+{
+	"Changes": [
+	//LooseSprites
+		//Map
+		{
+			"LogName": "Map ES Bridge",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Map{{Seasonal}}",
+			"FromFile": "assets/patches/loosesprites/{{Season}}_ES1_6.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 233, "Y": 95, "Width": 67, "Height": 22 }
+		},
+			//Green Fall
+			{
+				"LogName": "Map ES Bridge G",
+				"Action": "EditImage",
+				"Target": "LooseSprites/map_fall",
+				"FromFile": "assets/patches/loosesprites/fall_ES1_6_green.png",
+				"PatchMode": "Overlay",
+				"ToArea": { "X": 233, "Y": 95, "Width": 67, "Height": 22 },
+				"When": {
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true
+				}
+			},
+	//Maps
+		//East Scarpe
+			//Green Fall
+				{
+				"LogName": "East Scarpe",
+				"Action": "EditImage",
+				"Target": "Maps/fall_EastScarpe",
+				"FromFile": "assets/patches/maps/{{TargetWithoutPath}}_green.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 112, "Y": 48, "Width": 48, "Height": 48 },
+				"ToArea": { "X": 112, "Y": 48, "Width": 48, "Height": 48 },
+				"When": {
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true
+				}
+			},
+			{
+				"LogName": "East Scarpe",
+				"Action": "EditImage",
+				"Target": "Maps/fall_EastScarpe",
+				"FromFile": "assets/patches/maps/{{TargetWithoutPath}}_green.png",
+				"PatchMode": "Overlay",
+				"When": {
+					"Buildings": true,
+					"'New' Skin?": true,
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true
+				}
+			},
+			//???
+			{
+				"LogName": "???",
+				"Action": "EditMap",
+				"Target": "Maps/EastScarp_Village",
+				"FromFile": "assets/mapedits/EastScarpe-Aideen.tmx",
+				"PatchMode": "Overlay",
+				"ToArea": { "X": 19, "Y": 48, "Width": 1, "Height": 2 },
+				"When": { "VibrantPastoral.C/EdNygma": true }
+			},
+			{
+				"LogName": "???",
+				"Action": "EditImage",
+				"Target": "Maps/{{Season}}_EastScarpe",
+				"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 0, "Y": 16, "Width": 112, "Height": 112 },
+				"ToArea": { "X": 0, "Y": 16, "Width": 112, "Height": 112 },
+				"When": { "VibrantPastoral.C/EdNygma": true }
+			},
+			{
+				"LogName": "???",
+				"Action": "EditImage",
+				"Target": "Maps/{{Season}}_EastScarpe",
+				"FromFile": "assets/patches/maps/fall_aideens.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 95, "Width": 112, "Height": 14 },
+				"ToArea": { "X": 0, "Y": 14, "Width": 112, "Height": 14 },
+				"When": { "VibrantPastoral.C/EdNygma": true }
+			},
+			{
+				"LogName": "???",
+				"Action": "EditImage",
+				"Target": "Maps/{{Season}}_EastScarpe",
+				"FromFile": "assets/patches/maps/spring_aideens.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 95, "Width": 112, "Height": 14 },
+				"ToArea": { "X": 0, "Y": 28, "Width": 112, "Height": 14 },
+				"When": { "VibrantPastoral.C/EdNygma": true }
+			},
+			{
+				"LogName": "???",
+				"Action": "EditImage",
+				"Target": "Maps/{{Season}}_EastScarpe",
+				"FromFile": "assets/patches/maps/summer_aideens.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 95, "Width": 112, "Height": 14 },
+				"ToArea": { "X": 0, "Y": 42, "Width": 112, "Height": 14 },
+				"When": { "VibrantPastoral.C/EdNygma": true }
+			},
+			{
+				"LogName": "???",
+				"Action": "EditImage",
+				"Target": "Maps/{{Season}}_EastScarpe",
+				"FromFile": "assets/patches/maps/winter_aideens.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 95, "Width": 112, "Height": 14 },
+				"ToArea": { "X": 0, "Y": 56, "Width": 112, "Height": 14 },
+				"When": { "VibrantPastoral.C/EdNygma": true }
+			},
+	//Minigames
+		//Boat Journey
+		{
+			"LogName": "BJM ES",
+			"Action": "EditImage",
+			"Target": "Minigames/{{Season}}_boatJourneyMap",
+			"FromFile": "assets/patches/minigames/{{Season}}_bjm_ES1_6.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 332, "Y": 0, "Width": 141, "Height": 28 }
+		},
+			//Green Fall
+			{
+				"LogName": "BJM ES G",
+				"Action": "EditImage",
+				"Target": "Minigames/fall_boatJourneyMap",
+				"FromFile": "assets/patches/minigames/fall_bjm_ES1_6_green.png",
+				"PatchMode": "Overlay",
+				"ToArea": { "X": 332, "Y": 0, "Width": 141, "Height": 28 },
+				"When": {
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true
+				}
+			},
+	//Mods
+		//ES
+			//Green Fall
+			{
+				"LogName": "ES World Map G",
+				"Action": "EditImage",
+				"Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+				"FromFile": "assets/patches/ES/fall_ESMap_green.png",
+				"PatchMode": "Overlay",
+				"When": {
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true
+				}
+			}
+	]
+}

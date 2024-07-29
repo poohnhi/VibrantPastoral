@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="23" nextobjectid="187">
+ <editorsettings>
+  <export format="tmx"/>
+ </editorsettings>
+ <tileset firstgid="1" name="spring_EastScarpe" tilewidth="16" tileheight="16" tilecount="682" columns="22">
+  <image source="spring_EastScarpe.png" width="352" height="496"/>
+ </tileset>
+ <tileset firstgid="683" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <layer id="1" name="Back" width="3" height="4">
+  <data encoding="csv">
+74,75,76,
+96,97,98,
+118,119,120,
+0,0,1058
+</data>
+ </layer>
+</map>

@@ -1,0 +1,32 @@
+{
+	"Changes": [
+		//Mail
+		{
+			"Action": "EditData",
+			"Target": "Data/Mail",
+			"Entries": {
+				"EdNygma_Intro": "^^^^^            When a fall excels Its crest ^                 it Nears the poinT ^             that i dEliver youR quest.[letterbg Mods/{{ModId}}/letterBGextra 0][textcolor green][#]Ed Nygma",
+				"EdNygma_1": "^^^^           I could fume but your absence ^               has caused me to stop.^          Where people converge I exhaust ^                yet come out on top.[letterbg Mods/{{ModId}}/letterBGextra 0][textcolor green][#]Ed Nygma"
+			}
+		},
+		//Letter BG Extra
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/letterBGextra",
+            "FromFile": "Assets/LooseSprites/letterBGextra.png"
+        },
+		//Mail Event
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+            "When": {
+				"IsCommunityCenterComplete": true,
+				"Buildings |contains=town": true
+			},
+			"Entries": {
+				"15564001/z winter/k 15564002/l EdNygma_Intro/x EdNygma_Intro": "null",
+				"15564002/z spring/z summer/z fall/l EdNygma_1/x EdNygma_1": "null"
+			}
+		}
+	]
+}

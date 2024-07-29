@@ -1,0 +1,140 @@
+{
+	"Changes": [
+	//Map Edits
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "FromFile": "assets/mapedits/EastScarpe-Hole.tmx",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 77, "Y": 108, "Width": 3, "Height": 4 }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "FromFile": "assets/mapedits/EastScarpe-Aideen.tmx",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 19, "Y": 48, "Width": 1, "Height": 2 },
+			"When": {
+				"Buildings": true,
+				"'New' Skin?": true
+			}
+        },
+	//Maps
+		//East Scarpe
+		{
+			"LogName": "East Scarpe",
+			"Action": "EditImage",
+			"Target": "Maps/{{Season}}_EastScarpe",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 112, "Y": 48, "Width": 48, "Height": 48 },
+			"ToArea": { "X": 112, "Y": 48, "Width": 48, "Height": 48 }
+		},
+		{
+			"LogName": "East Scarpe",
+			"Action": "EditImage",
+			"Target": "Maps/{{Season}}_EastScarpe",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Buildings": true,
+				"'New' Skin?": true
+			}
+		},
+			//Aideens
+			{
+				"LogName": "Aideen Gold",
+				"Action": "EditImage",
+				"Target": "Maps/{{Season}}_EastScarpe",
+				"FromFile": "assets/patches/maps/{{Season}}_aideens.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 0, "Y": 0, "Width": 112, "Height": 95 },
+				"ToArea": { "X": 0, "Y": 16, "Width": 112, "Height": 95 },
+				"When": {
+					"Buildings": true,
+					"'New' Skin?": true,
+					"Aideen's": "golden"
+				}
+			},
+			{
+				"LogName": "Aideen RedBrown",
+				"Action": "EditImage",
+				"Target": "Maps/{{Season}}_EastScarpe",
+				"FromFile": "assets/patches/maps/{{Season}}_aideens.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 114, "Y": 0, "Width": 112, "Height": 53 },
+				"ToArea": { "X": 0, "Y": 16, "Width": 112, "Height": 53 },
+				"When": {
+					"Buildings": true,
+					"'New' Skin?": true,
+					"Aideen's": "reddish brown"
+				}
+			},
+			{
+				"LogName": "Aideen Brown",
+				"Action": "EditImage",
+				"Target": "Maps/{{Season}}_EastScarpe",
+				"FromFile": "assets/patches/maps/{{Season}}_aideens.png",
+				"PatchMode": "Overlay",
+				"FromArea": { "X": 114, "Y": 56, "Width": 112, "Height": 53 },
+				"ToArea": { "X": 0, "Y": 16, "Width": 112, "Height": 53 },
+				"When": {
+					"Buildings": true,
+					"'New' Skin?": true,
+					"Aideen's": "brown"
+				}
+			},
+		//Lighthouse
+		{
+			"LogName": "Lighthouse",
+			"Action": "EditImage",
+			"Target": "Maps/{{Season}}_lighthouse",
+			"FromFile": "assets/maps/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Buildings": true,
+				"'New' Skin?": true
+			}
+		},
+	//Mods
+		//ES
+		{
+			"LogName": "ES World Map",
+			"Action": "EditImage",
+			"Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+			"FromFile": "assets/ES/{{Season}}_ESMap.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 80, "Y": 0, "Width": 224, "Height": 222 }
+		},
+	//Snow Overlays
+		//Maps
+			//East Scarpe
+			{
+				"LogName": "East Scarpe",
+				"Action": "EditImage",
+				"Target": "Maps/winter_EastScarpe",
+				"FromFile": "assets/maps/EastScarpe_snow.png",
+				"PatchMode": "Overlay",
+				"When": {
+					"Buildings": true,
+					"'New' Skin?": true,
+					"VibrantPastoral.C/SnOverlay": true,
+					"Season": "winter"
+				}
+			},
+			//Lighthouse
+			{
+				"LogName": "Lighthouse",
+				"Action": "EditImage",
+				"Target": "Maps/winter_lighthouse",
+				"FromFile": "assets/maps/lighthouse_snow.png",
+				"PatchMode": "Overlay",
+				"When": {
+					"Buildings": true,
+					"'New' Skin?": true,
+					"VibrantPastoral.C/SnOverlay": true,
+					"Season": "winter"
+				}
+			}
+	]
+}

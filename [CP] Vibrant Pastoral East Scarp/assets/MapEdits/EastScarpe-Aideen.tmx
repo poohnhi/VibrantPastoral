@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="25" nextobjectid="187">
+ <editorsettings>
+  <export format="tmx"/>
+ </editorsettings>
+ <properties>
+  <property name="DayTiles" value="AlwaysFront 13 87 907 AlwaysFront 18 57 907 AlwaysFront 33 57 907 AlwaysFront 39 43 907 AlwaysFront 45 37 907 AlwaysFront 66 85 907 AlwaysFront 42 77 907 AlwaysFront 22 84 907 AlwaysFront 39 53 907 AlwaysFront 23 51 907 AlwaysFront 14 66 907 AlwaysFront 66 68 907 AlwaysFront 76 74 907 Buildings 68 13 510"/>
+  <property name="Light" value="72 107 4 73 107 4 13 87 4 13 87 4 18 57 4 33 57 4 39 43 4 45 37 4 66 85 4 47 77 4 23 84 4 22 83 4 39 53 4 23 51 4 14 66 4 66 68 4 76 74 4 68 13 4"/>
+  <property name="NPCWarp" value="78 109 Custom_ESSeaCave 28 19 32 32 Custom_ES_VetAwayWarpRoom 2 8 3 96 Custom_ES_CatWarpRoom 2 5 35 39 Custom_ESDeepDark 21 16 74 -1 Custom_ESDeepMountains 60 60"/>
+  <property name="NightTiles" value="AlwaysFront 13 87 908 AlwaysFront 18 57 908 AlwaysFront 33 57 908 AlwaysFront 39 43 908 AlwaysFront 45 37 908 AlwaysFront 66 85 908 AlwaysFront 47 77 908 AlwaysFront 22 84 908 AlwaysFront 39 53 908 AlwaysFront 23 51 908 AlwaysFront 14 66 908 AlwaysFront 66 68 908 AlwaysFront 76 74 908 Buildings 68 13 507"/>
+  <property name="Outdoors" value="T"/>
+  <property name="Warp" value="100 47 Custom_ESOrchard 1 18 100 48 Custom_ESOrchard 1 18 100 49 Custom_ESOrchard 1 19 100 20 Custom_ESMineEntrance 0 22"/>
+ </properties>
+ <tileset firstgid="1" name="spring_EastScarpe" tilewidth="16" tileheight="16" tilecount="682" columns="22">
+  <image source="spring_EastScarpe.png" width="352" height="496"/>
+ </tileset>
+ <layer id="24" name="Buildings" width="1" height="2">
+  <data encoding="csv">
+0,
+161
+</data>
+ </layer>
+ <layer id="23" name="Front" width="1" height="2">
+  <data encoding="csv">
+139,
+0
+</data>
+ </layer>
+</map>

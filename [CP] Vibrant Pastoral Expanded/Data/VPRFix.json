@@ -1,0 +1,150 @@
+{
+	"Changes": [
+		//z_Extras
+		{
+			"LogName": "Extras Craftables+",
+			"Action": "EditImage",
+			"Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+			"FromFile": "assets/patches/maps/z_extras_vprfix.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 64, "Y": 288, "Width": 304, "Height": 32 },
+			"ToArea": { "X": 64, "Y": 288, "Width": 304, "Height": 32 },
+			"When": { "VibrantPastoral.C/Extras": true }
+		},
+		{
+			"LogName": "Extras Bin",
+			"Action": "EditImage",
+			"Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+			"FromFile": "assets/patches/maps/z_extras_vprfix.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 208, "Y": 443, "Width": 32, "Height": 85 },
+			"ToArea": { "X": 208, "Y": 443, "Width": 32, "Height": 85 },
+			"When": { "VibrantPastoral.C/Extras": true }
+		},
+		{
+			"LogName": "Extras Camilla+",
+			"Action": "EditImage",
+			"Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+			"FromFile": "assets/patches/maps/z_extras_vprfix.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 144, "Y": 912, "Width": 48, "Height": 48 },
+			"ToArea": { "X": 144, "Y": 912, "Width": 48, "Height": 48 },
+			"When": { "VibrantPastoral.C/Extras": true }
+		},
+		{
+			"LogName": "Extras Torches+",
+			"Action": "EditImage",
+			"Target": "Maps/fall_z_extras, Maps/spring_z_extras, Maps/summer_z_extras, Maps/winter_z_extras",
+			"FromFile": "assets/patches/maps/z_extras_vprfix.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 208, "Y": 2016, "Width": 192, "Height": 240 },
+			"ToArea": { "X": 208, "Y": 2016, "Width": 192, "Height": 240 },
+			"When": { "VibrantPastoral.C/Extras": true }
+		},
+		{
+			"LogName": "Extras Display",
+			"Action": "EditImage",
+			"Target": "Maps/spring_z_extras",
+			"FromFile": "assets/patches/maps/z_extras_vprfix.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 48, "Y": 711, "Width": 48, "Height": 121 },
+			"ToArea": { "X": 48, "Y": 711, "Width": 48, "Height": 121 },
+			"When": {
+				"VibrantPastoral.C/Extras": true,
+				"Season": "spring"
+			}
+		},
+		{
+			"LogName": "Extras Crops",
+			"Action": "EditImage",
+			"Target": "Maps/winter_z_extras",
+			"FromFile": "assets/patches/maps/z_extras_vprfix.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 144, "Y": 0, "Width": 32, "Height": 143 },
+			"ToArea": { "X": 144, "Y": 0, "Width": 32, "Height": 143 },
+			"When": {
+				"VibrantPastoral.C/Extras": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Extras Pelican 1",
+			"Action": "EditImage",
+			"Target": "Maps/winter_z_extras",
+			"FromFile": "assets/patches/maps/z_extras_vprfix.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 0, "Y": 336, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 0, "Y": 336, "Width": 32, "Height": 32 },
+			"When": {
+				"VibrantPastoral.C/Extras": true,
+				"Season": "winter"
+			}
+		},
+		{
+			"LogName": "Extras Pelican 2",
+			"Action": "EditImage",
+			"Target": "Maps/winter_z_extras",
+			"FromFile": "assets/patches/maps/z_extras_vprfix.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 336, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 87, "Y": 3328, "Width": 32, "Height": 32 },
+			"When": {
+				"VibrantPastoral.C/Extras": true,
+				"Season": "winter"
+			}
+		},
+			//Buildings
+			{
+				"LogName": "Buildings Fairhaven ren",
+				"Action": "EditImage",
+				"Target": "Maps/{{Season}}_z_extras",
+				"FromFile": "assets/{{Target}}_buildings.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 1, "Y": 0, "Width": 142, "Height": 144 },
+				"ToArea": { "X": 1, "Y": 0, "Width": 142, "Height": 144 },
+				"When": {
+					"VibrantPastoral.C/Extras": true,
+					"Buildings |contains=extras": true
+				}
+			},
+			{
+				"LogName": "Buildings Fairhaven bro",
+				"Action": "EditImage",
+				"Target": "Maps/{{Season}}_z_extras",
+				"FromFile": "assets/{{Target}}_buildings.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 241, "Y": 400, "Width": 142, "Height": 128 },
+				"ToArea": { "X": 241, "Y": 400, "Width": 142, "Height": 128 },
+				"When": {
+					"VibrantPastoral.C/Extras": true,
+					"Buildings |contains=extras": true
+				}
+			},
+			{
+				"LogName": "Buildings OliVic",
+				"Action": "EditImage",
+				"Target": "Maps/{{Season}}_z_extras",
+				"FromFile": "assets/{{Target}}_buildings.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 210, "Y": 640, "Width": 172, "Height": 154 },
+				"ToArea": { "X": 210, "Y": 640, "Width": 172, "Height": 154 },
+				"When": {
+					"VibrantPastoral.C/Extras": true,
+					"Buildings |contains=extras": true
+				}
+			},
+			{
+				"LogName": "Buildings Aurora Bro",
+				"Action": "EditImage",
+				"Target": "Maps/{{Season}}_z_extras",
+				"FromFile": "assets/patches/maps/z_extras_vprfix.png",
+				"PatchMode": "Replace",
+				"FromArea": { "X": 224, "Y": 801, "Width": 176, "Height": 146 },
+				"ToArea": { "X": 224, "Y": 801, "Width": 176, "Height": 146 },
+				"When": {
+					"VibrantPastoral.C/Extras": true,
+					"Buildings |contains=extras": true
+				}
+			},
+	]
+}

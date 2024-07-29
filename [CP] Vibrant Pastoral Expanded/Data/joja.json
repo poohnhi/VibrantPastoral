@@ -1,0 +1,32 @@
+{
+	"Changes": [
+	//LooseSprites
+		//Map
+			//Joja
+			{
+				"LogName": "Map Joja",
+				"Action": "EditImage",
+				"Target": "LooseSprites/Map{{Seasonal}}",
+				"FromFile": "assets/patches/loosesprites/{{Season}}_joja_map.png",
+				"PatchMode": "Overlay",
+				"ToArea": { "X": 84, "Y": 14, "Width": 189, "Height": 117 },
+				"When": {
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true,
+				}
+			},
+			//Green Fall
+			{
+				"LogName": "Map Joja G",
+				"Action": "EditImage",
+				"Target": "LooseSprites/map_fall",
+				"FromFile": "assets/patches/loosesprites/fall_joja_map_green.png",
+				"PatchMode": "Overlay",
+				"ToArea": { "X": 84, "Y": 14, "Width": 189, "Height": 117 },
+				"When": {
+					"Season": "fall",
+					"VibrantPastoral.C/GreenFall": true,
+				}
+			}
+	]
+}
