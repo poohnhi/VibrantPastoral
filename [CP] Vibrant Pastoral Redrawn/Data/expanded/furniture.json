@@ -2,93 +2,47 @@
 	"Changes": [
 		//Furniture
 		{
-			"LogName": "Furniture Overlay",
-			"Action": "EditImage",
-			"Target": "Maps/VanillaFurniture",
-			"FromFile": "assets/tilesheets/furniture.png",
-			"PatchMode": "Overlay"
-		},
-		{
-			"LogName": "Furniture Seats a",
+			"LogName": "Furniture",
 			"Action": "EditImage",
 			"Target": "Tilesheets/furniture, Maps/VanillaFurniture",
-			"FromFile": "assets/tilesheets/furniture.png",
+			"FromFile": "assets/Tilesheets/furniture.png",
 			"PatchMode": "Replace",
-			"FromArea": { "X": 0, "Y": 144, "Width": 512, "Height": 160 },
-			"ToArea": { "X": 0, "Y": 144, "Width": 512, "Height": 160 }
+			"Priority": "Early"
 		},
 		{
-			"LogName": "Furniture Seats b",
+			"LogName": "Furniture Loca",
 			"Action": "EditImage",
 			"Target": "Tilesheets/furniture, Maps/VanillaFurniture",
-			"FromFile": "assets/tilesheets/furniture.png",
+			"FromFile": "assets/Tilesheets/furniture.png",
 			"PatchMode": "Replace",
-			"FromArea": { "X": 0, "Y": 1360, "Width": 160, "Height": 32 },
-			"ToArea": { "X": 0, "Y": 1360, "Width": 160, "Height": 32 }
+			"Priority": "Early",
+			"ToArea": { "X": 144, "Y": 807, "Width": 48, "Height": 16 },
+			"When": {
+				"Query: {{Language |contains=en}} OR NOT {{HasFile:assets/Tilesheets/furniture.{{Language}}.png}}": true,
+				"HasFile{{FromFile}}": true
+				}
 		},
 		{
-			"LogName": "Furniture Seats c",
+			"LogName": "Furniture Loca Int",
 			"Action": "EditImage",
 			"Target": "Tilesheets/furniture, Maps/VanillaFurniture",
-			"FromFile": "assets/tilesheets/furniture.png",
+			"FromFile": "assets/Tilesheets/furniture.{{Language}}.png",
 			"PatchMode": "Replace",
-			"FromArea": { "X": 64, "Y": 1392, "Width": 32, "Height": 32 },
-			"ToArea": { "X": 64, "Y": 1392, "Width": 32, "Height": 32 }
-		},
-		{
-			"LogName": "Furniture Tank",
-			"Action": "EditImage",
-			"Target": "Tilesheets/furniture, Maps/VanillaFurniture",
-			"FromFile": "assets/tilesheets/furniture.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 304, "Y": 976, "Width": 32, "Height": 48 },
-			"ToArea": { "X": 304, "Y": 976, "Width": 32, "Height": 48 }
+			"Priority": "Early",
+			"ToArea": { "X": 144, "Y": 807, "Width": 48, "Height": 16 },
+			"When": {
+				"{{Language |contains=en}}": false,
+				"HasFile{{FromFile}}": true
+				}
 		},
 		//Furniture Front
 		{
-			"LogName": "Furniture Front Seats",
+			"LogName": "Furniture Front",
 			"Action": "EditImage",
 			"Target": "Tilesheets/furnitureFront",
-			"FromFile": "assets/{{Target}}_seats.png",
+			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Replace",
-			"FromArea": { "X": 0, "Y": 0, "Width": 512, "Height": 112 },
-			"ToArea": { "X": 0, "Y": 144, "Width": 512, "Height": 112 }
-		},
-		{
-			"LogName": "Furniture Front Seats",
-			"Action": "EditImage",
-			"Target": "Tilesheets/furnitureFront",
-			"FromFile": "assets/{{Target}}_seats.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 0, "Y": 112, "Width": 384, "Height": 48 },
-			"ToArea": { "X": 0, "Y": 256, "Width": 384, "Height": 48 }
-		},
-		{
-			"LogName": "Furniture Front Seats",
-			"Action": "EditImage",
-			"Target": "Tilesheets/furnitureFront",
-			"FromFile": "assets/{{Target}}_seats.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 416, "Y": 112, "Width": 64, "Height": 32 },
-			"ToArea": { "X":0, "Y": 1360, "Width": 64, "Height": 32 }
-		},
-		{
-			"LogName": "Furniture Front Seats",
-			"Action": "EditImage",
-			"Target": "Tilesheets/furnitureFront",
-			"FromFile": "assets/{{Target}}_seats.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 480, "Y": 112, "Width": 32, "Height": 64 },
-			"ToArea": { "X": 64, "Y": 1360, "Width": 32, "Height": 64 }
-		},
-		{
-			"LogName": "Furniture Front Seats",
-			"Action": "EditImage",
-			"Target": "Tilesheets/furnitureFront",
-			"FromFile": "assets/{{Target}}_seats.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 416, "Y": 144, "Width": 64, "Height": 32 },
-			"ToArea": { "X": 96, "Y": 1360, "Width": 64, "Height": 32 }
+			"Priority": "Early"
 		},
 		//Furniture 2
 		{
@@ -96,7 +50,8 @@
 			"Action": "EditImage",
 			"Target": "Tilesheets/furniture_2",
 			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace"
+			"PatchMode": "Replace",
+			"Priority": "Early"
 		},
 		//Furniture 2 Front
 		{
@@ -105,6 +60,7 @@
 			"Target": "Tilesheets/furniture_2Front",
 			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Replace",
+			"Priority": "Early",
 			"ToArea": { "X": 64, "Y": 80, "Width": 16, "Height": 32 }
 		}
 	]

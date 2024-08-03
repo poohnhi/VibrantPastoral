@@ -36,24 +36,53 @@
 			"Target": "LooseSprites/Cursors",
 			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
+		{
+			"LogName": "Background",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"Priority": "Early",
+			"FromArea": { "X": 0, "Y": 736, "Width": 639, "Height": 447 },
 			"ToArea": { "X": 0, "Y": 736, "Width": 639, "Height": 447 }
 		},
 		{
-			"LogName": "Warehouse",
+			"LogName": "Warehouse Loca",
 			"Action": "EditImage",
 			"Target": "LooseSprites/Cursors",
-			"FromFile": "assets/loosesprites/{{Season}}_warehouse.png",
+			"FromFile": "assets/Locale/LooseSprites/{{Season}}_warehouse.png",
 			"PatchMode": "Overlay",
+			"Priority": "Early",
 			"FromArea": { "X": 0, "Y": 25, "Width": 174, "Height": 101 },
 			"ToArea": { "X": 424, "Y": 1275, "Width": 174, "Height": 101 },
-			"When": { "Buildings |contains=town, warehouse": true }
+			"When": {
+				"Query: {{Language |contains=en}} OR NOT {{HasFile:assets/Locale/LooseSprites/{{Season}}_warehouse.{{Language}}.png}}": true,
+				"Buildings |contains=town, warehouse": true
+				}
+		},
+		{
+			"LogName": "Warehouse Loca Int",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Locale/LooseSprites/{{Season}}_warehouse.{{Language}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"FromArea": { "X": 0, "Y": 25, "Width": 174, "Height": 101 },
+			"ToArea": { "X": 424, "Y": 1275, "Width": 174, "Height": 101 },
+			"When": {
+				"{{Language |contains=en}}": false,
+				"Buildings |contains=town, warehouse": true
+				}
 		},
 		{
 			"LogName": "Warehouse Roof",
 			"Action": "EditImage",
 			"Target": "LooseSprites/Cursors",
-			"FromFile": "assets/loosesprites/winter_warehouse.png",
+			"FromFile": "assets/LooseSprites/winter_warehouse.png",
 			"PatchMode": "Overlay",
+			"Priority": "Early",
 			"FromArea": { "X": 0, "Y": 0, "Width": 174, "Height": 25 },
 			"ToArea": { "X": 66, "Y": 1678, "Width": 174, "Height": 25 },
 			"When": {
@@ -61,11 +90,40 @@
 				"Season": "winter"
 				}
 		},
+		{
+			"LogName": "Water Warm",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"Priority": "Early",
+			"FromArea": { "X": 0, "Y": 2000, "Width": 640, "Height": 256 },
+			"ToArea": { "X": 0, "Y": 2000, "Width": 640, "Height": 256 },
+			"When": { "Season": "spring, summer" }
+		},
+		{
+			"LogName": "Water Cold",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{Target}}_cold.png",
+			"PatchMode": "Replace",
+			"Priority": "Early",
+			"ToArea": { "X": 0, "Y": 2000, "Width": 640, "Height": 256 },
+			"When": { "Season": "fall, winter" }
+		},
 		//Cursors 1.6
 		{
 			"LogName": "Cursors 1.6",
 			"Action": "EditImage",
 			"Target": "LooseSprites/Cursors_1_6",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay"
+		},
+		//Cursors 2
+		{
+			"LogName": "Cursors 2",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors2",
 			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Overlay"
 		},
@@ -96,13 +154,70 @@
 			"PatchMode": "Replace"
 		},
 	//Maps
+		//Bathhouse Tiles
+		{
+			"LogName": "Bathhouse Tiles",
+			"Action": "EditImage",
+			"Target": "Maps/bathhouse_tiles",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"When": { "VibrantPastoral.C/Interiors": true }
+		},
+		{
+			"LogName": "Bathhouse Tiles Loca",
+			"Action": "EditImage",
+			"Target": "Maps/bathhouse_tiles",
+			"FromFile": "assets/Locale/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"ToArea": { "X": 144, "Y": 208, "Width": 32, "Height": 32 },
+			"When": {
+				"VibrantPastoral.C/Interiors": true,
+				"Query: {{Language |contains=en}} OR NOT {{HasFile:assets/Locale/{{Target}}.{{Language}}.png}}": true,
+				"HasFile{{FromFile}}": true
+				}
+		},
+		{
+			"LogName": "Bathhouse Tiles Loca Int",
+			"Action": "EditImage",
+			"Target": "Maps/bathhouse_tiles",
+			"FromFile": "assets/Locale/{{Target}}.{{Language}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"ToArea": { "X": 144, "Y": 208, "Width": 32, "Height": 32 },
+			"When": {
+				"VibrantPastoral.C/Interiors": true,
+				"{{Language |contains=en}}": false,
+				"HasFile{{FromFile}}": true
+				}
+		},
+		//Bugland Tiles
+		{
+			"LogName": "Bugland Tiles",
+			"Action": "EditImage",
+			"Target": "Maps/bugLandTiles",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
+		//Coop Tiles
+		{
+			"LogName": "Coop Tiles",
+			"Action": "EditImage",
+			"Target": "Maps/coopTiles",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
 		//Desert Festival
 		{
 			"LogName": "Desert Festival a",
 			"Action": "EditImage",
 			"Target": "Maps/desert_festival_tilesheet",
 			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Overlay"
+			"PatchMode": "Overlay",
+			"Priority": "Early"
 		},
 		{
 			"LogName": "Desert Festival b",
@@ -110,8 +225,55 @@
 			"Target": "Maps/desert_festival_tilesheet",
 			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Replace",
+			"Priority": "Early",
 			"FromArea": { "X": 112, "Y": 512, "Width": 112, "Height": 32 },
 			"ToArea": { "X": 112, "Y": 512, "Width": 112, "Height": 32 }
+		},
+		//Desert Tiles
+		{
+			"LogName": "Desert Tiles",
+			"Action": "EditImage",
+			"Target": "Maps/DesertTiles",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
+		{
+			"LogName": "Iridium Oasis",
+			"Action": "EditImage",
+			"Target": "Maps/DesertTiles",
+			"FromFile": "assets/{{Target}}_iridium.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"ToArea": { "X": 0, "Y": 192, "Width": 128, "Height": 176 }
+		},
+		//Desert Tiles Extended
+		{
+			"LogName": "Desert Tiles Extended",
+			"Action": "EditImage",
+			"Target": "Maps/DesertTiles_Extended",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
+		//Elliott House Tiles
+		{
+			"LogName": "Elliott House Tiles",
+			"Action": "EditImage",
+			"Target": "Maps/ElliottHouseTiles",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"When": { "VibrantPastoral.C/Interiors": true }
+		},
+		//Elliott Sea Tiles
+		{
+			"LogName": "Elliott Sea Tiles",
+			"Action": "EditImage",
+			"Target": "Maps/ElliottSeaTiles",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
 		},
 		//Floors 2
 		{
@@ -120,6 +282,7 @@
 			"Target": "Maps/floors_2",
 			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Overlay",
+			"Priority": "Early",
 			"When": { "VibrantPastoral.C/Interiors": true }
 		},
 		//HarveyBallon
@@ -129,6 +292,7 @@
 			"Target": "Maps/HarveyBalloonTiles",
 			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Overlay",
+			"Priority": "Early"
 		},
 		//Mastery Cave
 		{
@@ -136,16 +300,17 @@
 			"Action": "EditImage",
 			"Target": "Maps/masteryCaveTilesheet",
 			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Overlay"
+			"PatchMode": "Overlay",
+			"Priority": "Early"
 		},
 		//Monster Grave
 		{
 			"LogName": "Monster Grave",
 			"Action": "EditImage",
-			"Target": "Maps/fall_monsterGraveTiles",
+			"Target": "Maps/{{Season}}_monsterGraveTiles",
 			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Overlay",
-			"When": { "Season": "fall" }
+			"Priority": "Early"
 		},
 		//OutdoorsTileSheet
 		{
@@ -221,7 +386,7 @@
 			"LogName": "Vanilla Craftables",
 			"Action": "EditImage",
 			"Target": "Maps/VanillaCraftables",
-			"FromFile": "assets/tilesheets/craftables.png",
+			"FromFile": "assets/Tilesheets/craftables.png",
 			"PatchMode": "Overlay",
 			"Priority": "Early"
 		},
@@ -297,7 +462,26 @@
 			"FromFile": "assets/minigames/{{TreeType}}/{{TargetWithoutPath}}.png",
 			"PatchMode": "Replace"
 		},
+	//TerrainFeatures
+		//Hoe Dirt
+		{
+			"LogName": "Hoe Dirt",
+			"Action": "EditImage",
+			"Target": "TerrainFeatures/hoeDirt, TerrainFeatures/hoeDirtDark, TerrainFeatures/hoeDirtSnow",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
 	//TileSheets
+		//Animations
+		{
+			"LogName": "Animations",
+			"Action": "EditImage",
+			"Target": "TileSheets/animations",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"ToArea": { "X": 0, "Y": 1472, "Width": 640, "Height": 128 }
+		},
 		//Bushes
 		{
 			"LogName": "Bush a",
@@ -344,7 +528,7 @@
 		//			"LogName": "Bush b",
 		//			"Action": "EditImage",
 		//			"Target": "TileSheets/bushes",
-		//			"FromFile": "assets/tilesheets/{{TargetWithoutPath}}.png",
+		//			"FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png",
 		//			"PatchMode": "Overlay",
 		//			"FromArea": { "X": 0, "Y": 48, "Width": 64, "Height": 32 },
 		//			"ToArea": { "X": 0, "Y": 320, "Width": 64, "Height": 32 }
