@@ -63,30 +63,80 @@
 			"Target": "LooseSprites/Cursors",
 			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
+		{
+			"LogName": "Background",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"Priority": "Early",
+			"FromArea": { "X": 0, "Y": 736, "Width": 639, "Height": 447 },
 			"ToArea": { "X": 0, "Y": 736, "Width": 639, "Height": 447 }
 		},
 		{
-			"LogName": "Warehouse",
+			"LogName": "Warehouse Loca",
 			"Action": "EditImage",
 			"Target": "LooseSprites/Cursors",
-			"FromFile": "assets/loosesprites/{{Season}}_warehouse.png",
+			"FromFile": "assets/Locale/LooseSprites/{{Season}}_warehouse.png",
 			"PatchMode": "Overlay",
+			"Priority": "Early",
 			"FromArea": { "X": 0, "Y": 25, "Width": 174, "Height": 101 },
 			"ToArea": { "X": 424, "Y": 1275, "Width": 174, "Height": 101 },
-			"When": { "Buildings |contains=town, warehouse": true }
+			"When": {
+				"Query: {{Language |contains=en}} OR NOT {{HasFile:assets/Locale/LooseSprites/{{Season}}_warehouse.{{Language}}.png}}": true,
+				"Buildings |contains=town, warehouse": true
+				}
+		},
+		{
+			"LogName": "Warehouse Loca Int",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Locale/LooseSprites/{{Season}}_warehouse.{{Language}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"FromArea": { "X": 0, "Y": 25, "Width": 174, "Height": 101 },
+			"ToArea": { "X": 424, "Y": 1275, "Width": 174, "Height": 101 },
+			"When": {
+				"{{Language |contains=en}}": false,
+				"Buildings |contains=town, warehouse": true
+				}
 		},
 		{
 			"LogName": "Warehouse Roof",
 			"Action": "EditImage",
 			"Target": "LooseSprites/Cursors",
-			"FromFile": "assets/loosesprites/winter_warehouse.png",
+			"FromFile": "assets/LooseSprites/winter_warehouse.png",
 			"PatchMode": "Overlay",
+			"Priority": "Early",
 			"FromArea": { "X": 0, "Y": 0, "Width": 174, "Height": 25 },
 			"ToArea": { "X": 66, "Y": 1678, "Width": 174, "Height": 25 },
 			"When": {
 				"Buildings |contains=town, warehouse": true,
 				"Season": "winter"
 				}
+		},
+		{
+			"LogName": "Water Warm",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"Priority": "Early",
+			"FromArea": { "X": 0, "Y": 2000, "Width": 640, "Height": 256 },
+			"ToArea": { "X": 0, "Y": 2000, "Width": 640, "Height": 256 },
+			"When": { "Season": "spring, summer" }
+		},
+		{
+			"LogName": "Water Cold",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{Target}}_cold.png",
+			"PatchMode": "Replace",
+			"Priority": "Early",
+			"ToArea": { "X": 0, "Y": 2000, "Width": 640, "Height": 256 },
+			"When": { "Season": "fall, winter" }
 		},
 		//Cursors 1.6
 		{
@@ -96,12 +146,20 @@
 			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Overlay"
 		},
+		//Cursors 2
+		{
+			"LogName": "Cursors 2",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors2",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay"
+		},
 		//Fences
 		{
 			"LogName": "Fences",
 			"Action": "EditImage",
 			"Target": "LooseSprites/Fence1, LooseSprites/Fence5",
-			"FromFile": "assets/loosesprites/{{SeasonOverride}}_{{TargetWithoutPath}}.png",
+			"FromFile": "assets/LooseSprites/{{SeasonOverride}}_{{TargetWithoutPath}}.png",
 			"Update": "OnLocationChange",
 			"PatchMode": "Replace",
 			"When": { "Fences": true }
@@ -111,7 +169,7 @@
 			"LogName": "Map",
 			"Action": "EditImage",
 			"Target": "LooseSprites/Map{{Seasonal}}",
-			"FromFile": "assets/loosesprites/{{Season}}_map.png",
+			"FromFile": "assets/LooseSprites/{{Season}}_map.png",
 			"PatchMode": "Overlay"
 		},
 		//Map Island
@@ -127,7 +185,7 @@
 			"LogName": "Map",
 			"Action": "EditImage",
 			"Target": "LooseSprites/Farm_ranching_map{{Seasonal}}",
-			"FromFile": "assets/loosesprites/{{Season}}_map.png",
+			"FromFile": "assets/LooseSprites/{{Season}}_map.png",
 			"PatchMode": "Overlay",
 			"FromArea": { "X": 0, "Y": 363, "Width": 131, "Height": 61 }
 		},
@@ -140,6 +198,46 @@
 			"PatchMode": "Replace"
 		},
 	//Maps
+		//Bathhouse Tiles
+		{
+			"LogName": "Bathhouse Tiles",
+			"Action": "EditImage",
+			"Target": "Maps/bathhouse_tiles",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay"
+		},
+		{
+			"LogName": "Bathhouse Tiles Loca",
+			"Action": "EditImage",
+			"Target": "Maps/bathhouse_tiles",
+			"FromFile": "assets/Locale/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 144, "Y": 208, "Width": 32, "Height": 32 },
+			"When": {
+				"Query: {{Language |contains=en}} OR NOT {{HasFile:assets/Locale/{{Target}}.{{Language}}.png}}": true,
+				"HasFile{{FromFile}}": true
+				}
+		},
+		{
+			"LogName": "Bathhouse Tiles Loca Int",
+			"Action": "EditImage",
+			"Target": "Maps/bathhouse_tiles",
+			"FromFile": "assets/Locale/{{Target}}.{{Language}}.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 144, "Y": 208, "Width": 32, "Height": 32 },
+			"When": {
+				"{{Language |contains=en}}": false,
+				"HasFile{{FromFile}}": true
+				}
+		},
+		//Bugland Tiles
+		{
+			"LogName": "Bugland Tiles",
+			"Action": "EditImage",
+			"Target": "Maps/bugLandTiles",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay"
+		},
 		//Desert Festival
 		{
 			"LogName": "Desert Festival a",
@@ -324,6 +422,15 @@
 			"PatchMode": "Replace"
 		},
 	//TileSheets
+		//Animations
+		{
+			"LogName": "Animations",
+			"Action": "EditImage",
+			"Target": "TileSheets/animations",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"ToArea": { "X": 0, "Y": 1472, "Width": 640, "Height": 128 }
+		},
 		//Bushes
 		{
 			"LogName": "Bush a",
@@ -382,7 +489,7 @@
 			"LogName": "Snow Fence",
 			"Action": "EditImage",
 			"Target": "LooseSprites/Fence1, LooseSprites/Fence5",
-			"FromFile": "assets/loosesprites/fence_snow.png",
+			"FromFile": "assets/LooseSprites/fence_snow.png",
 			"Update": "OnLocationChange",
 			"PatchMode": "Overlay",
 			"When": {
@@ -396,8 +503,9 @@
 			"LogName": "Snow Warehouse Roof",
 			"Action": "EditImage",
 			"Target": "LooseSprites/Cursors",
-			"FromFile": "assets/loosesprites/warehouse_snow.png",
+			"FromFile": "assets/LooseSprites/warehouse_snow.png",
 			"PatchMode": "Overlay",
+			"Priority": "Early",
 			"FromArea": { "X": 0, "Y": 0, "Width": 174, "Height": 25 },
 			"ToArea": { "X": 66, "Y": 1678, "Width": 174, "Height": 25 },
 			"When": {
