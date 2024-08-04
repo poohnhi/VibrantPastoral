@@ -117,7 +117,8 @@
 			"Action": "EditImage",
 			"Target": "LooseSprites/Cursors_1_6",
 			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Overlay"
+			"PatchMode": "Overlay",
+			"Priority": "Early"
 		},
 		//Cursors 2
 		{
@@ -125,7 +126,8 @@
 			"Action": "EditImage",
 			"Target": "LooseSprites/Cursors2",
 			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Overlay"
+			"PatchMode": "Overlay",
+			"Priority": "Early"
 		},
 		//Fences
 		{
@@ -143,7 +145,8 @@
 			"Action": "EditImage",
 			"Target": "LooseSprites/map_island",
 			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Overlay"
+			"PatchMode": "Overlay",
+			"Priority": "Early"
 		},
 		//Panorama
 		{
@@ -151,7 +154,26 @@
 			"Action": "EditImage",
 			"Target": "LooseSprites/stardewPanorama",
 			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace"
+			"PatchMode": "Replace",
+			"Priority": "Early"
+		},
+		//Suspension Bridge
+		{
+			"LogName": "Suspension Bridge",
+			"Action": "EditImage",
+			"Target": "LooseSprites/SuspensionBridge",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
+		//Temporary Sprites
+		{
+			"LogName": "Temporary Sprites",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
 		},
 	//Maps
 		//Bugland Tiles
@@ -236,11 +258,38 @@
 			"PatchMode": "Overlay",
 			"Priority": "Early"
 		},
+		//Island Tilesheet
+		{
+			"LogName": "its",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
+		//Island Tilesheet 2
+		{
+			"LogName": "its2",
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_2",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
 		//Mastery Cave
 		{
 			"LogName": "Mastery Cave",
 			"Action": "EditImage",
 			"Target": "Maps/masteryCaveTilesheet",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
+		//Mines
+		{
+			"LogName": "Mines",
+			"Action": "EditImage",
+			"Target": "Maps/mine, Maps/mine_desert, Maps/mine_desert_dark, Maps/mine_dino, Maps/mine_frost, Maps/mine_frost_dark, Maps/mine_lava, Maps/mine_lava_dark, Maps/mine_slime, Maps/volcano_caldera",
 			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Overlay",
 			"Priority": "Early"
@@ -369,6 +418,15 @@
 			"PatchMode": "Replace"
 		},
 	//TerrainFeatures
+		//Flooring
+		{
+			"LogName": "Flooring",
+			"Action": "EditImage",
+			"Target": "TerrainFeatures/Flooring, TerrainFeatures/Flooring_winter",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
 		//Hoe Dirt
 		{
 			"LogName": "Hoe Dirt",

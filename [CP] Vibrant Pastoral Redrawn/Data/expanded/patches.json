@@ -14,15 +14,6 @@
 			"When": { "FarmLayout": "Hilltop, Riverland, Standard, Wilderness" }
 		},
 	//LooseSprites
-		//Temporary Sprites
-		{
-			"LogName": "Temporary Sprites",
-			"Action": "EditImage",
-			"Target": "LooseSprites/temporary_sprites_1",
-			"FromFile": "assets/patches/{{Target}}.png",
-			"PatchMode": "Overlay",
-			"ToArea": { "X": 208, "Y": 524, "Width": 130, "Height": 49 }
-		},
 		//???
 		{
 			"LogName": "???",
@@ -60,15 +51,6 @@
 					"VibrantPastoral.C/GreenFall": true
 				}
 			},
-		//Island Tilesheet
-		{
-			"LogName": "its",
-			"Action": "EditImage",
-			"Target": "Maps/island_tilesheet_1",
-			"FromFile": "assets/patches/{{Target}}.png",
-			"PatchMode": "Overlay",
-			"ToArea": { "X": 0, "Y": 592, "Width": 512, "Height": 448 }
-		},
 		//Island Tilesheet (seasonal)
 		{
 			"LogName": "its Season",
@@ -170,24 +152,6 @@
 					"Season": "fall",
 					"VibrantPastoral.C/GreenFall": true
 				}
-			},
-		//Island Tilesheet 2
-		{
-			"LogName": "its2",
-			"Action": "EditImage",
-			"Target": "Maps/island_tilesheet_2",
-			"FromFile": "assets/patches/{{Target}}.png",
-			"PatchMode": "Overlay",
-			"ToArea": { "X": 48, "Y": 0, "Width": 96, "Height": 16 }
-		},
-		//Mines
-			//Desert
-			{
-				"LogName": "Mine Desert",
-				"Action": "EditImage",
-				"Target": "Maps/Mines/mine_desert",
-				"FromFile": "assets/patches/{{Target}}.png",
-				"PatchMode": "Overlay",
 			},
 		//Monster Grave
 			//Green Fall
