@@ -158,8 +158,8 @@
 		{
 			"LogName": "Fences",
 			"Action": "EditImage",
-			"Target": "LooseSprites/Fence1, LooseSprites/Fence5",
-			"FromFile": "assets/LooseSprites/{{SeasonOverride}}_{{TargetWithoutPath}}.png",
+			"Target": "LooseSprites/Fence1, LooseSprites/Fence2, LooseSprites/Fence3, LooseSprites/Fence5",
+			"FromFile": "assets/LooseSprites/fences/{{SeasonOverride}}_{{TargetWithoutPath}}.png",
 			"Update": "OnLocationChange",
 			"PatchMode": "Replace",
 			"When": { "Fences": true }
@@ -198,44 +198,6 @@
 			"PatchMode": "Replace"
 		},
 	//Maps
-		//Bathhouse Tiles
-		{
-			"LogName": "Bathhouse Tiles",
-			"Action": "EditImage",
-			"Target": "Maps/bathhouse_tiles",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Overlay",
-			"Priority": "Early",
-			"When": { "VibrantPastoral.C/Interiors": true }
-		},
-		{
-			"LogName": "Bathhouse Tiles Loca",
-			"Action": "EditImage",
-			"Target": "Maps/bathhouse_tiles",
-			"FromFile": "assets/Locale/{{Target}}.png",
-			"PatchMode": "Overlay",
-			"Priority": "Early",
-			"ToArea": { "X": 144, "Y": 208, "Width": 32, "Height": 32 },
-			"When": {
-				"VibrantPastoral.C/Interiors": true,
-				"Query: {{Language |contains=en}} OR NOT {{HasFile:assets/Locale/{{Target}}.{{Language}}.png}}": true,
-				"HasFile{{FromFile}}": true
-				}
-		},
-		{
-			"LogName": "Bathhouse Tiles Loca Int",
-			"Action": "EditImage",
-			"Target": "Maps/bathhouse_tiles",
-			"FromFile": "assets/Locale/{{Target}}.{{Language}}.png",
-			"PatchMode": "Overlay",
-			"Priority": "Early",
-			"ToArea": { "X": 144, "Y": 208, "Width": 32, "Height": 32 },
-			"When": {
-				"VibrantPastoral.C/Interiors": true,
-				"{{Language |contains=en}}": false,
-				"HasFile{{FromFile}}": true
-				}
-		},
 		//Bugland Tiles
 		{
 			"LogName": "Bugland Tiles",
@@ -300,16 +262,6 @@
 			"PatchMode": "Overlay",
 			"Priority": "Early"
 		},
-		//Elliott House Tiles
-		{
-			"LogName": "Elliott House Tiles",
-			"Action": "EditImage",
-			"Target": "Maps/ElliottHouseTiles",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Overlay",
-			"Priority": "Early",
-			"When": { "VibrantPastoral.C/Interiors": true }
-		},
 		//Elliott Sea Tiles
 		{
 			"LogName": "Elliott Sea Tiles",
@@ -318,16 +270,6 @@
 			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Overlay",
 			"Priority": "Early"
-		},
-		//Floors 2
-		{
-			"LogName": "Floors 2",
-			"Action": "EditImage",
-			"Target": "Maps/floors_2",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Overlay",
-			"Priority": "Early",
-			"When": { "VibrantPastoral.C/Interiors": true }
 		},
 		//HarveyBallon
 		{
@@ -406,34 +348,6 @@
 			"Target": "Maps/fall_outdoorTileSheet_Extra, Maps/spring_outdoorTileSheet_Extra, Maps/summer_outdoorTileSheet_Extra, Maps/winter_outdoorTileSheet_Extra",
 			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Overlay"
-		},
-		//TownInterior 2
-		{
-			"LogName": "TownInterior 2",
-			"Action": "EditImage",
-			"Target": "Maps/towninterior_2",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Overlay",
-			"When": { "VibrantPastoral.C/Interiors": true }
-		},
-		//Wallpapers 2
-		{
-			"LogName": "Wallpapers 2",
-			"Action": "EditImage",
-			"Target": "Maps/wallpapers_2",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Overlay",
-			"FromArea": { "X": 0, "Y": 0, "Width": 256, "Height": 96 },
-			"Priority": "Early"
-		},
-		//Walls And Floors
-		{
-			"LogName": "Walls And Floors",
-			"Action": "EditImage",
-			"Target": "Maps/walls_and_floors",
-			"FromFile": "assets/maps/walls_and_floors.png",
-			"PatchMode": "Overlay",
-			"Priority": "Early"
 		},
 		//Waterfalls
 		{
@@ -566,7 +480,7 @@
 			"LogName": "Snow Fence",
 			"Action": "EditImage",
 			"Target": "LooseSprites/Fence1, LooseSprites/Fence5",
-			"FromFile": "assets/LooseSprites/fence_snow.png",
+			"FromFile": "assets/LooseSprites/fences/Fence_snow.png",
 			"Update": "OnLocationChange",
 			"PatchMode": "Overlay",
 			"When": {

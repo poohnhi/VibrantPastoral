@@ -246,7 +246,8 @@
 		//Floors Extra
         {
             "Action": "Include",
-            "FromFile": "data/flooring.json"
+            "FromFile": "data/flooring.json",
+			"When": { "VibrantPastoral.C/Interiors": true }
         },
 		//Furniture
         {

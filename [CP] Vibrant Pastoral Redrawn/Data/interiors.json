@@ -1,147 +1,138 @@
 {
 	"Changes": [
+		//Bathhouse Tiles
+		{
+			"LogName": "Bathhouse Tiles",
+			"Action": "EditImage",
+			"Target": "Maps/bathhouse_tiles",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
+		{
+			"LogName": "Bathhouse Tiles Loca",
+			"Action": "EditImage",
+			"Target": "Maps/bathhouse_tiles",
+			"FromFile": "assets/Locale/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"ToArea": { "X": 144, "Y": 208, "Width": 32, "Height": 32 },
+			"When": {
+				"Query: {{Language |contains=en}} OR NOT {{HasFile:assets/Locale/{{Target}}.{{Language}}.png}}": true,
+				"HasFile{{FromFile}}": true
+				}
+		},
+		{
+			"LogName": "Bathhouse Tiles Loca Int",
+			"Action": "EditImage",
+			"Target": "Maps/bathhouse_tiles",
+			"FromFile": "assets/Locale/{{Target}}.{{Language}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"ToArea": { "X": 144, "Y": 208, "Width": 32, "Height": 32 },
+			"When": {
+				"{{Language |contains=en}}": false,
+				"HasFile{{FromFile}}": true
+				}
+		},
+		//Elliott House Tiles
+		{
+			"LogName": "Elliott House Tiles",
+			"Action": "EditImage",
+			"Target": "Maps/ElliottHouseTiles",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
+		//Farmhouse Tiles
+		{
+			"LogName": "Farmhouse Tiles",
+			"Action": "EditImage",
+			"Target": "Maps/farmhouse_tiles",
+			"FromFile": "assets/patches/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
+		//Floors 2
+		{
+			"LogName": "Floors 2",
+			"Action": "EditImage",
+			"Target": "Maps/floors_2",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
 		//TownInterior
 		{
-			"LogName": "TownInterior",
-			"Action": "EditImage",
-			"Target": "Maps/townInterior",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Overlay"
-		},
-		{
-			"LogName": "TownInterior",
+			"LogName": "Town Interior",
 			"Action": "EditImage",
 			"Target": "Maps/townInterior",
 			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Replace",
-			"FromArea": { "X": 0, "Y": 0, "Width": 512, "Height": 497 },
-			"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 497 }
+			"Priority": "Early"
 		},
 		{
-			"LogName": "TownInterior",
+			"LogName": "Town Interior Loca",
 			"Action": "EditImage",
 			"Target": "Maps/townInterior",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 0, "Y": 497, "Width": 368, "Height": 191 },
-			"ToArea": { "X": 0, "Y": 497, "Width": 368, "Height": 191 }
+			"FromFile": "assets/Locale/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"ToArea": { "X": 0, "Y": 432, "Width": 512, "Height": 656 },
+			"When": {
+				"Query: {{Language |contains=en}} OR NOT {{HasFile:assets/Locale/{{Target}}.{{Language}}.png}}": true,
+				"HasFile{{FromFile}}": true
+				}
 		},
 		{
-			"LogName": "TownInterior",
+			"LogName": "Town Interior Loca Int",
 			"Action": "EditImage",
 			"Target": "Maps/townInterior",
+			"FromFile": "assets/Locale/{{Target}}.{{Language}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"ToArea": { "X": 0, "Y": 432, "Width": 512, "Height": 656 },
+			"When": {
+				"{{Language |contains=en}}": false,
+				"HasFile{{FromFile}}": true
+				}
+		},
+		//TownInterior 2
+		{
+			"LogName": "Town Interior 2",
+			"Action": "EditImage",
+			"Target": "Maps/towninterior_2",
 			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 174, "Y": 688, "Width": 226, "Height": 16 },
-			"ToArea": { "X": 174, "Y": 688, "Width": 226, "Height": 16 }
+			"PatchMode": "Overlay",
+			"Priority": "Early"
+		},
+		//Wallpapers 2
+		{
+			"LogName": "Wallpapers 2",
+			"Action": "EditImage",
+			"Target": "Maps/wallpapers_2",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"FromArea": { "X": 0, "Y": 0, "Width": 256, "Height": 96 }
+		},
+		//Walls And Floors
+		{
+			"LogName": "Walls And Floors",
+			"Action": "EditImage",
+			"Target": "Maps/walls_and_floors",
+			"FromFile": "assets/maps/walls_and_floors.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early"
 		},
 		{
-			"LogName": "TownInterior",
+			"LogName": "Walls And Floors",
 			"Action": "EditImage",
-			"Target": "Maps/townInterior",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 320, "Y": 704, "Width": 80, "Height": 80 },
-			"ToArea": { "X": 320, "Y": 704, "Width": 80, "Height": 80 }
+			"Target": "Maps/VanillaWallsAndFloors",
+			"FromFile": "assets/maps/walls_and_floors.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"When": { "HasMod": "VibrantPastoral.Expanded" }
 		},
-		{
-			"LogName": "TownInterior",
-			"Action": "EditImage",
-			"Target": "Maps/townInterior",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 160, "Y": 784, "Width": 240, "Height": 160 },
-			"ToArea": { "X": 160, "Y": 784, "Width": 240, "Height": 160 }
-		},
-		{
-			"LogName": "TownInterior",
-			"Action": "EditImage",
-			"Target": "Maps/townInterior",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 224, "Y": 944, "Width": 128, "Height": 80 },
-			"ToArea": { "X": 224, "Y": 944, "Width": 128, "Height": 80 }
-		},
-		{
-			"LogName": "TownInterior",
-			"Action": "EditImage",
-			"Target": "Maps/townInterior",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 384, "Y": 944, "Width": 16, "Height": 32 },
-			"ToArea": { "X": 384, "Y": 944, "Width": 16, "Height": 32 }
-		},
-		{
-			"LogName": "TownInterior",
-			"Action": "EditImage",
-			"Target": "Maps/townInterior",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 352, "Y": 976, "Width": 16, "Height": 64 },
-			"ToArea": { "X": 352, "Y": 976, "Width": 16, "Height": 64 }
-		},
-		{
-			"LogName": "TownInterior",
-			"Action": "EditImage",
-			"Target": "Maps/townInterior",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 183, "Y": 992, "Width": 18, "Height": 64 },
-			"ToArea": { "X": 183, "Y": 992, "Width": 18, "Height": 64 }
-		},
-		{
-			"LogName": "TownInterior",
-			"Action": "EditImage",
-			"Target": "Maps/townInterior",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 215, "Y": 992, "Width": 18, "Height": 64 },
-			"ToArea": { "X": 215, "Y": 992, "Width": 18, "Height": 64 }
-		},
-		{
-			"LogName": "TownInterior",
-			"Action": "EditImage",
-			"Target": "Maps/townInterior",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 96, "Y": 1024, "Width": 73, "Height": 32 },
-			"ToArea": { "X": 96, "Y": 1024, "Width": 73, "Height": 32 }
-		},
-		{
-			"LogName": "TownInterior",
-			"Action": "EditImage",
-			"Target": "Maps/townInterior",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 247, "Y": 1024, "Width": 74, "Height": 32 },
-			"ToArea": { "X": 247, "Y": 1024, "Width": 74, "Height": 32 }
-		},
-		{
-			"LogName": "TownInterior",
-			"Action": "EditImage",
-			"Target": "Maps/townInterior",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 321, "Y": 1053, "Width": 1, "Height": 1 },
-			"ToArea": { "X": 321, "Y": 1053, "Width": 1, "Height": 1 }
-		},
-		{
-			"LogName": "TownInterior",
-			"Action": "EditImage",
-			"Target": "Maps/townInterior",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 366, "Y": 1052, "Width": 2, "Height": 2 },
-			"ToArea": { "X": 366, "Y": 1052, "Width": 2, "Height": 2 }
-		},
-		{
-			"LogName": "TownInterior",
-			"Action": "EditImage",
-			"Target": "Maps/townInterior",
-			"FromFile": "assets/{{Target}}.png",
-			"PatchMode": "Replace",
-			"FromArea": { "X": 321, "Y": 1054, "Width": 95, "Height": 34 },
-			"ToArea": { "X": 321, "Y": 1054, "Width": 95, "Height": 34 }
-		}
 	]
 }

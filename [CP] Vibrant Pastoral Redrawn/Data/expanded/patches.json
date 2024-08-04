@@ -60,15 +60,6 @@
 					"VibrantPastoral.C/GreenFall": true
 				}
 			},
-		//Farmhouse Tiles
-		{
-			"LogName": "Farmhouse Tiles",
-			"Action": "EditImage",
-			"Target": "Maps/farmhouse_tiles",
-			"FromFile": "assets/patches/{{Target}}.png",
-			"PatchMode": "Overlay",
-				"When": { "VibrantPastoral.C/Interiors": true }
-		},
 		//Island Tilesheet
 		{
 			"LogName": "its",
