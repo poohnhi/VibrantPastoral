@@ -17,10 +17,7 @@
 			"PatchMode": "Overlay",
 			"Priority": "Early",
 			"ToArea": { "X": 144, "Y": 208, "Width": 32, "Height": 32 },
-			"When": {
-				"Query: {{Language |contains=en}} OR NOT {{HasFile:assets/Locale/{{Target}}.{{Language}}.png}}": true,
-				"HasFile{{FromFile}}": true
-				}
+			"When": { "Query: {{Language |contains=en}} OR NOT {{HasFile:assets/Locale/{{Target}}.{{Language}}.png}}": true }
 		},
 		{
 			"LogName": "Bathhouse Tiles Loca Int",
@@ -30,10 +27,7 @@
 			"PatchMode": "Overlay",
 			"Priority": "Early",
 			"ToArea": { "X": 144, "Y": 208, "Width": 32, "Height": 32 },
-			"When": {
-				"{{Language |contains=en}}": false,
-				"HasFile{{FromFile}}": true
-				}
+			"When": { "{{Language |contains=en}}": false }
 		},
 		//Caroline Greenhouse Tiles
 		{
@@ -97,10 +91,7 @@
 			"PatchMode": "Overlay",
 			"Priority": "Early",
 			"ToArea": { "X": 0, "Y": 432, "Width": 512, "Height": 656 },
-			"When": {
-				"Query: {{Language |contains=en}} OR NOT {{HasFile:assets/Locale/{{Target}}.{{Language}}.png}}": true,
-				"HasFile{{FromFile}}": true
-				}
+			"When": { "Query: {{Language |contains=en}} OR NOT {{HasFile:assets/Locale/{{Target}}.{{Language}}.png}}": true }
 		},
 		{
 			"LogName": "Town Interior Loca Int",
@@ -110,10 +101,7 @@
 			"PatchMode": "Overlay",
 			"Priority": "Early",
 			"ToArea": { "X": 0, "Y": 432, "Width": 512, "Height": 656 },
-			"When": {
-				"{{Language |contains=en}}": false,
-				"HasFile{{FromFile}}": true
-				}
+			"When": { "{{Language |contains=en}}": false }
 		},
 		//TownInterior 2
 		{

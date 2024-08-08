@@ -13,27 +13,21 @@
 			"LogName": "Furniture Loca",
 			"Action": "EditImage",
 			"Target": "Tilesheets/furniture",
-			"FromFile": "assets/{{Target}}.png",
+			"FromFile": "assets/Locale/{{Target}}.png",
 			"PatchMode": "Replace",
 			"Priority": "Early",
 			"ToArea": { "X": 144, "Y": 807, "Width": 48, "Height": 16 },
-			"When": {
-				"Query: {{Language |contains=en}} OR NOT {{HasFile:assets/{{Target}}.{{Language}}.png}}": true,
-				"HasFile{{FromFile}}": true
-				}
+			"When": { "Query: {{Language |contains=en}} OR NOT {{HasFile:assets/Locale/{{Target}}.{{Language}}.png}}": true }
 		},
 		{
 			"LogName": "Furniture Loca Int",
 			"Action": "EditImage",
 			"Target": "Tilesheets/furniture",
-			"FromFile": "assets/{{Target}}.{{Language}}.png",
+			"FromFile": "assets/Locale/{{Target}}.{{Language}}.png",
 			"PatchMode": "Replace",
 			"Priority": "Early",
 			"ToArea": { "X": 144, "Y": 807, "Width": 48, "Height": 16 },
-			"When": {
-				"{{Language |contains=en}}": false,
-				"HasFile{{FromFile}}": true
-				}
+			"When": { "{{Language |contains=en}}": false }
 		},
 		//Furniture Front
 		{

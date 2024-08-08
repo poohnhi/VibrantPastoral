@@ -176,6 +176,35 @@
 			"Priority": "Early"
 		},
 	//Maps
+		//Beach
+		{
+			"LogName": "Beach",
+			"Action": "EditImage",
+			"Target": "Maps/{{Season}}_beach",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"Priority": "Early"
+		},
+		{
+			"LogName": "Beach Loca",
+			"Action": "EditImage",
+			"Target": "Maps/{{Season}}_beach",
+			"FromFile": "assets/Locale/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"ToArea": { "X": 32, "Y": 416, "Width": 48, "Height": 32 },
+			"When": { "Query: {{Language |contains=en}} OR NOT {{HasFile:assets/Locale/{{Target}}.{{Language}}.png}}": true }
+		},
+		{
+			"LogName": "Beach Loca Int",
+			"Action": "EditImage",
+			"Target": "Maps/{{Season}}_beach",
+			"FromFile": "assets/Locale/{{Target}}.{{Language}}.png",
+			"PatchMode": "Overlay",
+			"Priority": "Early",
+			"ToArea": { "X": 32, "Y": 416, "Width": 48, "Height": 32 },
+			"When": { "Query: {{Language |contains=en}}": false }
+		},
 		//Bugland Tiles
 		{
 			"LogName": "Bugland Tiles",

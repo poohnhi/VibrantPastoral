@@ -41,7 +41,7 @@
 		//Beach
 			//Green Fall
 			{
-				"LogName": "beach",
+				"LogName": "Beach Green",
 				"Action": "EditImage",
 				"Target": "Maps/fall_beach",
 				"FromFile": "assets/patches/{{Target}}_green.png",
