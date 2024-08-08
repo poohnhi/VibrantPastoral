@@ -334,9 +334,17 @@
 		},
 		//OutdoorsTileSheet
 		{
+			"LogName": "Outdoors Tilesheet",
+			"Action": "EditImage",
+			"Target": "Maps/fall_outdoorsTileSheet",
+			"FromFile": "assets/{{Target}}.png",
+			"PatchMode": "Replace",
+			"Priority": "Early"
+		},
+		{
 			"LogName": "ots",
 			"Action": "EditImage",
-			"Target": "Maps/fall_outdoorsTileSheet, Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/winter_outdoorsTileSheet",
+			"Target": "Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/winter_outdoorsTileSheet",
 			"FromFile": "assets/{{Target}}.png",
 			"PatchMode": "Overlay"
 		},
